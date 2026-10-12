@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Chyau.Bio – Reactores de algas y tecnología climática de Nepal</title>
+<meta content="Chyau Bio Technologies crea tecnología climática en Nepal: reactores de algas que convierten CO2 en oxígeno, una barrera de basura para el río Bagmati y herramientas agrícolas inteligentes." name="description"/>
+<link href="https://chyaubio.com/es/" rel="canonical"/>
+<link href="https://chyaubio.com/" hreflang="en" rel="alternate"/>
+<link href="https://chyaubio.com/ne/" hreflang="ne" rel="alternate"/>
+<link href="https://chyaubio.com/hi/" hreflang="hi" rel="alternate"/>
+<link href="https://chyaubio.com/zh/" hreflang="zh" rel="alternate"/>
+<link href="https://chyaubio.com/de/" hreflang="de" rel="alternate"/>
+<link href="https://chyaubio.com/es/" hreflang="es" rel="alternate"/>
+<link href="https://chyaubio.com/fr/" hreflang="fr" rel="alternate"/>
+<link href="https://chyaubio.com/pt/" hreflang="pt" rel="alternate"/>
+<link href="https://chyaubio.com/" hreflang="x-default" rel="alternate"/>
+<meta content="website" property="og:type"/>
+<meta content="Chyau.Bio" property="og:site_name"/>
+<meta content="Chyau.Bio – Reactores de algas y tecnología climática de Nepal" property="og:title"/>
+<meta content="Chyau Bio Technologies crea tecnología climática en Nepal: reactores de algas que convierten CO2 en oxígeno, una barrera de basura para el río Bagmati y herramientas agrícolas inteligentes." property="og:description"/>
+<meta content="https://chyaubio.com/es/" property="og:url"/>
+<meta content="es_ES" property="og:locale"/>
+<meta content="https://chyaubio.com/img/web/hero-dome.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="#16352a" name="theme-color"/>
+
+<link href="/img/favicon.png" rel="icon"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://chyaubio.com/#organization", "name": "Chyau.Bio", "url": "https://chyaubio.com/", "logo": "https://chyaubio.com/img/Logos/logo_transparent.png", "description": "Chyau Bio Technologies builds climate technology in Nepal: algae reactors that turn CO2 into oxygen, a Bagmati River trash barrier, and smart farming tools.", "foundingDate": "2019", "founder": [{"@type": "Person", "name": "Gunjan Ghimire", "jobTitle": "Founder and CEO"}, {"@type": "Person", "name": "Pallab Shrestha", "jobTitle": "Founder, Research Engineer"}], "address": {"@type": "PostalAddress", "addressLocality": "Tinkune", "addressRegion": "Bagmati Province", "addressCountry": "NP"}, "email": "info@chyaubio.com", "telephone": "+977-9742894429", "sameAs": ["https://www.facebook.com/Chyaubio-103694081368823/", "https://www.youtube.com/channel/UC6jaRWOt3NLV4oqacOBEFhw"], "legalName": "Chyau Bio Technologies Pvt. Ltd.", "award": "Green Startup Achievement Award, Waste Management & Climate Conference 2024", "knowsAbout": ["Algae bioreactors", "Carbon dioxide to oxygen conversion", "Air pollution mitigation", "River waste collection", "Smart farming", "Mycelium biomaterials"], "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Vayu Putra Algae Reactor", "description": "Air pollution mitigation device made in Nepal that converts CO2 into oxygen and biomass using algae, sunlight and wastewater."}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Smart Switch", "description": "Farm sensor kit that reports sunlight, temperature, soil moisture and humidity to a phone."}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Smart Farming PPE", "description": "Protective clothing for farmers spraying crops."}}], "image": "https://chyaubio.com/img/web/hero-dome.jpg"}</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link as="image" href="/img/web/hero-dome.jpg" rel="preload"/>
+<style>
+:root {
+  --forest:#16352a; --forest-2:#1f4a39; --algae:#3c8c55; --algae-soft:#e4f0e4;
+  --cream:#f7f4ec; --sand:#efe9da; --amber:#e3a72f; --ink:#1a2320; --muted:#5c6b64;
+  --line:#dcd6c6; --radius:16px; --max:1180px;
+}
+*,*::before,*::after { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:72px; }
+body { margin:0; font-family:Inter,system-ui,sans-serif; color:var(--ink); background:var(--cream); line-height:1.65; font-size:17px; }
+img { max-width:100%; display:block; }
+a { color:var(--algae); }
+h1,h2,h3 { font-family:Fraunces,Georgia,serif; line-height:1.15; margin:0 0 .5em; color:var(--forest); }
+h2 { font-size:clamp(1.9rem,4vw,2.7rem); }
+h3 { font-size:1.25rem; }
+.wrap { max-width:var(--max); margin:0 auto; padding:0 20px; }
+section { padding:88px 0; }
+.eyebrow { display:inline-block; font-size:.78rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--algae); margin-bottom:12px; }
+.lead { font-size:1.15rem; color:var(--muted); max-width:680px; }
+.btn { display:inline-flex; align-items:center; gap:8px; padding:13px 22px; border-radius:999px; font-weight:600; text-decoration:none; font-size:.98rem; transition:transform .15s, background .15s; }
+.btn:hover { transform:translateY(-1px); }
+.btn-primary { background:var(--amber); color:#1d1606; }
+.btn-primary:hover { background:#f0b843; }
+.btn-ghost { border:1.5px solid rgba(255,255,255,.6); color:#fff; }
+.btn-ghost:hover { background:rgba(255,255,255,.12); }
+.btn-dark { background:var(--forest); color:#fff; }
+
+/* language picker */
+.lang { position:relative; margin-left:auto; margin-right:18px; }
+.lang-btn { background:none; border:1.5px solid rgba(255,255,255,.55); color:#fff; border-radius:999px; padding:6px 12px; font:500 .88rem Inter,sans-serif; cursor:pointer; display:flex; align-items:center; gap:6px; }
+.solid .lang-btn { color:var(--forest); border-color:var(--line); }
+.lang-menu { display:none; position:absolute; right:0; top:calc(100% + 8px); list-style:none; margin:0; padding:6px; background:#fff; border:1px solid var(--line); border-radius:12px; box-shadow:0 12px 30px rgba(0,0,0,.12); min-width:150px; z-index:60; }
+.lang.open .lang-menu { display:block; }
+.lang-menu a { display:block; padding:8px 12px; border-radius:8px; color:var(--ink); text-decoration:none; font-size:.95rem; }
+.lang-menu a:hover, .lang-menu a[aria-current] { background:var(--algae-soft); }
+.nav { margin-left:0; }
+:lang(ne) body, :lang(hi) body { font-family:Inter,"Noto Sans Devanagari",system-ui,sans-serif; }
+:lang(ne) h1, :lang(ne) h2, :lang(ne) h3, :lang(hi) h1, :lang(hi) h2, :lang(hi) h3 { font-family:Fraunces,"Noto Serif Devanagari",Georgia,serif; line-height:1.3; }
+:lang(zh) body { font-family:Inter,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif; }
+:lang(zh) h1, :lang(zh) h2, :lang(zh) h3 { font-family:Fraunces,"Songti SC","Noto Serif SC","PingFang SC",serif; line-height:1.3; }
+:lang(zh) .eyebrow, :lang(ne) .eyebrow, :lang(hi) .eyebrow { letter-spacing:.04em; }
+
+/* header */
+.site-head { position:fixed; inset:0 0 auto; z-index:50; transition:background .25s, box-shadow .25s; }
+.site-head.solid { background:rgba(247,244,236,.96); backdrop-filter:blur(8px); box-shadow:0 1px 0 var(--line); }
+.head-row { display:flex; align-items:center; justify-content:space-between; height:68px; }
+.brand { display:flex; align-items:center; gap:10px; font-family:Fraunces,serif; font-weight:700; font-size:1.3rem; color:#fff; text-decoration:none; }
+.brand img { width:36px; height:36px; }
+.solid .brand { color:var(--forest); }
+.nav { display:flex; gap:26px; }
+.nav a { color:#fff; text-decoration:none; font-weight:500; font-size:.95rem; opacity:.92; }
+.solid .nav a { color:var(--ink); }
+.nav a:hover { opacity:1; text-decoration:underline; text-underline-offset:5px; }
+.menu-btn { display:none; background:none; border:0; color:#fff; font-size:1.5rem; cursor:pointer; padding:8px; }
+.solid .menu-btn { color:var(--forest); }
+
+/* hero */
+.hero { position:relative; min-height:92vh; display:flex; align-items:flex-end; color:#fff; padding:140px 0 72px;
+  background:linear-gradient(180deg,rgba(10,30,22,.55) 0%,rgba(10,30,22,.35) 40%,rgba(10,30,22,.85) 100%), url("/img/web/hero-dome.jpg") center/cover; }
+.hero h1 { color:#fff; font-size:clamp(2.6rem,7vw,5rem); max-width:900px; letter-spacing:-.01em; }
+.hero p { font-size:clamp(1.05rem,2vw,1.3rem); max-width:640px; opacity:.95; margin:0 0 28px; }
+.hero .eyebrow { color:#bfe3c4; }
+.hero-ctas { display:flex; gap:12px; flex-wrap:wrap; }
+
+/* stats */
+.stats { background:var(--forest); color:#fff; padding:40px 0; }
+.stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:28px; }
+.stat strong { display:block; font-family:Fraunces,serif; font-size:clamp(1.8rem,3.5vw,2.5rem); color:var(--amber); line-height:1.1; }
+.stat span { font-size:.92rem; opacity:.85; }
+
+/* products */
+.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:44px; }
+.card { background:#fff; border-radius:var(--radius); overflow:hidden; border:1px solid var(--line); display:flex; flex-direction:column; transition:transform .2s, box-shadow .2s; }
+.card:hover { transform:translateY(-3px); box-shadow:0 14px 30px rgba(22,53,42,.10); }
+.card img { width:100%; height:230px; object-fit:cover; }
+.card-body { padding:22px 22px 26px; }
+.card p { margin:0; color:var(--muted); font-size:.98rem; }
+.tag { display:inline-block; background:var(--algae-soft); color:var(--forest-2); font-size:.75rem; font-weight:600; padding:3px 10px; border-radius:999px; margin-bottom:10px; }
+
+/* how it works */
+.how { background:var(--sand); }
+.section-head { max-width:760px; margin-bottom:40px; }
+.how-grid { display:grid; grid-template-columns:1.1fr 1fr; gap:40px; align-items:center; }
+.equation { display:flex; align-items:center; justify-content:center; gap:clamp(8px,1.6vw,22px); background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:clamp(18px,3vw,34px) clamp(14px,2.5vw,32px); margin-bottom:48px; box-shadow:0 14px 34px rgba(22,53,42,.07); }
+.eq-side { display:flex; align-items:flex-start; gap:clamp(6px,1.2vw,18px); flex-wrap:nowrap; }
+.eq-term { display:flex; flex-direction:column; align-items:center; text-align:center; min-width:0; }
+.eq-icon { width:clamp(40px,4.4vw,56px); height:clamp(40px,4.4vw,56px); border-radius:50%; display:grid; place-items:center; background:var(--algae-soft); color:var(--forest-2); font-size:clamp(1.05rem,1.7vw,1.4rem); margin-bottom:10px; }
+.eq-term.out .eq-icon { background:var(--forest); color:var(--amber); }
+.eq-formula { font-family:Fraunces,Georgia,serif; font-weight:700; color:var(--forest); font-size:clamp(1.25rem,2.7vw,2.2rem); line-height:1.1; white-space:nowrap; }
+.eq-formula sub { font-size:.55em; }
+.eq-label { margin-top:6px; font-weight:600; font-size:clamp(.74rem,1vw,.88rem); line-height:1.3; }
+.eq-label small { display:block; font-weight:400; color:var(--muted); font-size:.92em; }
+.eq-op { font-family:Fraunces,serif; font-size:clamp(1.3rem,2.6vw,2rem); color:var(--muted); padding-top:clamp(52px,5.6vw,70px); line-height:1; }
+.eq-arrow { display:flex; flex-direction:column; align-items:center; gap:6px; min-width:clamp(70px,9vw,130px); padding-top:clamp(12px,2.4vw,30px); }
+.eq-line { display:block; width:100%; height:2px; background:var(--algae); position:relative; }
+.eq-line::after { content:""; position:absolute; right:-2px; top:-6px; border:7px solid transparent; border-left:11px solid var(--algae); border-right:0; }
+.eq-cat { font-size:clamp(.72rem,1vw,.85rem); font-weight:600; color:var(--algae); white-space:nowrap; }
+.eq-cat i { color:var(--amber); }
+.how-grid { align-items:start; }
+.process { display:grid; grid-template-columns:1fr auto 1fr; gap:14px; align-items:start; background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:22px; }
+.p-col { display:flex; flex-direction:column; gap:10px; }
+.p-label { font-size:.72rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+.p-item { display:flex; gap:12px; align-items:flex-start; background:var(--cream); border-radius:12px; padding:11px 13px; }
+.p-item i { color:var(--algae); font-size:1.15rem; width:20px; text-align:center; margin-top:3px; }
+.p-item strong { display:block; font-size:.93rem; }
+.p-item span { font-size:.8rem; color:var(--muted); line-height:1.4; display:block; }
+.p-item.out { background:var(--forest); color:#fff; }
+.p-item.out i { color:var(--amber); }
+.p-item.out span { color:#c9d8cf; }
+.p-core { display:flex; flex-direction:column; align-items:center; gap:10px; align-self:center; }
+@media (min-width:721px) { .p-core .p-arrow { width:26px; height:2px; } .p-core .p-arrow::after { left:auto; right:-4px; bottom:auto; top:-6px; border:7px solid transparent; border-left:10px solid var(--algae); border-right:0; } .p-core { flex-direction:row; } .p-reactor { order:0; } }
+.p-arrow { width:2px; height:26px; background:var(--algae); position:relative; }
+.p-arrow::after { content:""; position:absolute; left:-6px; bottom:-4px; border:7px solid transparent; border-top:10px solid var(--algae); border-bottom:0; }
+.p-reactor { text-align:center; }
+.p-reactor img { width:104px; height:136px; object-fit:cover; border-radius:12px; margin:0 auto 6px; }
+.p-reactor span { font-family:Fraunces,serif; font-weight:700; font-size:.92rem; color:var(--forest); line-height:1.2; display:block; }
+.how-grid { margin-bottom:12px; }
+.media { margin:0; }
+.media figcaption { font-size:.88rem; color:var(--muted); margin-top:14px; line-height:1.55; }
+.video { position:relative; aspect-ratio:16/9; border-radius:var(--radius); overflow:hidden; background:var(--forest); box-shadow:0 18px 40px rgba(22,53,42,.18); }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.uses-title { margin:44px 0 4px; font-size:1.35rem; }
+.uses { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:16px; }
+.use { background:#fff; border-radius:14px; padding:20px; border:1px solid var(--line); }
+.use i { display:inline-grid; place-items:center; width:42px; height:42px; border-radius:50%; background:var(--algae-soft); color:var(--forest-2); font-size:1.15rem; }
+.use h4 { font-size:1.02rem; margin:12px 0 4px; }
+.use p { margin:0; font-size:.9rem; color:var(--muted); line-height:1.55; }
+
+/* domes */
+.dome-grid { display:grid; grid-template-columns:1fr 1.05fr; gap:56px; align-items:start; }
+.dome-facts { list-style:none; padding:0; margin:26px 0; display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.dome-facts li { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px; }
+.dome-facts strong { display:block; font-family:Fraunces,serif; font-size:1.9rem; color:var(--forest); line-height:1.1; }
+.dome-facts span { font-size:.82rem; color:var(--muted); line-height:1.35; display:block; }
+.dome-manual { position:relative; border:1px solid var(--line); background:#fff; }
+.dome-manual span { position:absolute; right:10px; bottom:10px; background:var(--forest); color:#fff; font-size:.8rem; font-weight:600; padding:6px 12px; border-radius:999px; }
+.dome-photos { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px; }
+.dome-photos .g-item { margin:0; }
+.dome-photos img { height:180px; object-fit:cover; }
+
+/* story + timeline */
+.story-intro { display:grid; grid-template-columns:1fr 1.3fr; gap:48px; align-items:end; margin-bottom:56px; }
+.story-intro p { margin:0 0 12px; }
+.timeline { list-style:none; margin:0; padding:0; position:relative; }
+.timeline::before { content:""; position:absolute; left:50%; top:0; bottom:0; width:2px; background:linear-gradient(var(--algae),var(--line)); transform:translateX(-50%); }
+.t-item { position:relative; display:grid; grid-template-columns:1fr 64px 1fr; align-items:center; margin-bottom:22px; }
+.t-icon { grid-column:2; justify-self:center; width:48px; height:48px; border-radius:50%; background:var(--forest); color:var(--amber); display:grid; place-items:center; font-size:1.15rem; box-shadow:0 0 0 6px var(--cream); z-index:1; }
+.t-card { grid-row:1; background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px 20px; position:relative; transition:transform .2s, box-shadow .2s; }
+.t-card:hover { transform:translateY(-2px); box-shadow:0 10px 24px rgba(22,53,42,.08); }
+.t-item:nth-child(odd) .t-card { grid-column:1; text-align:right; }
+.t-item:nth-child(even) .t-card { grid-column:3; }
+.t-card time { display:block; font-size:.78rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--algae); }
+.t-card h3 { font-size:1.12rem; margin:4px 0 4px; }
+.t-card p { margin:0; color:var(--muted); font-size:.93rem; line-height:1.55; }
+.t-item:last-child .t-icon { background:var(--amber); color:var(--forest); }
+
+/* partners + press */
+.partners { background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.partner-names { display:flex; flex-wrap:wrap; gap:10px 12px; margin:24px 0 0; padding:0; list-style:none; }
+.partner-names li { border:1px solid var(--line); border-radius:999px; padding:8px 16px; font-weight:500; background:var(--cream); }
+.press { list-style:none; padding:0; margin:24px 0 0; display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.press a { display:block; padding:16px 18px; border:1px solid var(--line); border-radius:12px; text-decoration:none; color:var(--ink); background:var(--cream); height:100%; }
+.press a:hover { border-color:var(--algae); }
+.press small { display:block; color:var(--algae); font-weight:600; font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; }
+
+/* team */
+.people { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:40px; }
+.person { background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:22px; text-align:center; position:relative; }
+.person img { width:120px; height:120px; border-radius:50%; object-fit:cover; margin:0 auto 14px; }
+.person.small img { width:88px; height:88px; }
+.person h3 { font-size:1.1rem; margin-bottom:2px; }
+.person .role { color:var(--algae); font-weight:600; font-size:.88rem; margin:0 0 8px; }
+.person p { font-size:.92rem; color:var(--muted); margin:0; }
+.person .li { position:absolute; top:14px; right:16px; color:#0a66c2; font-size:1.2rem; }
+.subhead { margin-top:56px; }
+
+/* gallery */
+.gallery { columns:4 220px; column-gap:14px; margin-top:36px; }
+.g-item { display:block; width:100%; margin:0 0 14px; padding:0; border:0; background:none; cursor:zoom-in; break-inside:avoid; border-radius:12px; overflow:hidden; }
+.g-item img { width:100%; transition:transform .3s; }
+.g-item:hover img { transform:scale(1.03); }
+.lightbox { position:fixed; inset:0; background:rgba(8,18,14,.92); display:none; align-items:center; justify-content:center; flex-direction:column; z-index:100; padding:24px; }
+.lightbox.open { display:flex; }
+.lightbox img { max-height:80vh; max-width:92vw; border-radius:8px; }
+.lightbox p { color:#fff; margin-top:14px; text-align:center; }
+.lightbox button { position:absolute; top:16px; right:20px; background:none; border:0; color:#fff; font-size:2.2rem; cursor:pointer; }
+
+/* contact */
+.contact { background:var(--forest); color:#e9efe9; }
+.contact h2 { color:#fff; }
+.contact-grid { display:grid; grid-template-columns:1fr 1.1fr; gap:48px; align-items:start; }
+.contact ul { list-style:none; padding:0; margin:26px 0; }
+.contact li { display:flex; gap:14px; align-items:center; margin-bottom:14px; font-size:1.05rem; }
+.contact li i { width:22px; text-align:center; color:var(--amber); font-size:1.2rem; }
+.contact a { color:#fff; }
+.map { border-radius:var(--radius); overflow:hidden; aspect-ratio:4/3; }
+.map iframe { width:100%; height:100%; border:0; }
+footer { background:#0f261d; color:#a9b8b0; padding:28px 0; font-size:.9rem; }
+.foot-row { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+.socials { display:flex; gap:16px; }
+.socials a { color:#fff; font-size:1.3rem; }
+
+@media (max-width:960px) {
+  .cards { grid-template-columns:1fr 1fr; }
+  .people { grid-template-columns:1fr 1fr; }
+  .how-grid,.story-grid,.contact-grid,.dome-grid,.story-intro { grid-template-columns:1fr; gap:36px; }
+  .uses { grid-template-columns:1fr 1fr; }
+  .timeline::before { left:24px; }
+  .t-item { grid-template-columns:48px 1fr; gap:16px; }
+  .t-icon { grid-column:1; }
+  .t-item:nth-child(odd) .t-card, .t-item:nth-child(even) .t-card { grid-column:2; text-align:left; }
+  .uses { grid-template-columns:1fr 1fr; }
+  .stats-grid { grid-template-columns:1fr 1fr; }
+}
+@media (max-width:720px) {
+  section { padding:64px 0; }
+  .nav { display:none; position:absolute; top:68px; left:0; right:0; flex-direction:column; gap:0; background:var(--cream); box-shadow:0 8px 20px rgba(0,0,0,.08); }
+  .nav.open { display:flex; }
+  .nav a { color:var(--ink); padding:14px 20px; border-top:1px solid var(--line); }
+  .menu-btn { display:block; }
+  .cards,.press,.uses { grid-template-columns:1fr; }
+  .process { grid-template-columns:1fr; }
+  .equation { flex-direction:column; gap:14px; }
+  .eq-arrow { flex-direction:row; min-width:0; padding:0; gap:10px; }
+  .eq-line { width:2px; height:34px; }
+  .eq-line::after { right:-6px; top:auto; bottom:-4px; border:7px solid transparent; border-top:11px solid var(--algae); border-bottom:0; }
+  .eq-op { padding-top:58px; }
+  .hero { min-height:88vh; }
+}
+@media (max-width:420px) { .people { grid-template-columns:1fr; } }
+@media (prefers-reduced-motion:reduce) { *{ transition:none!important; scroll-behavior:auto!important; } }
+</style>
+</head>
+<body>
+<header class="site-head" id="top">
+<div class="wrap head-row">
+<a class="brand" href="#home"><img alt="" height="36" src="/img/Logos/logo_transparent.png" width="36"/>Chyau.Bio</a>
+<div class="lang" data-notranslate="">
+<button aria-expanded="false" aria-haspopup="true" aria-label="Language" class="lang-btn" type="button"><i aria-hidden="true" class="fa fa-globe"></i> <span class="lang-current">Español</span> <i aria-hidden="true" class="fa fa-angle-down"></i></button>
+<ul class="lang-menu">
+<li><a data-lang="en" href="/" hreflang="en" lang="en">English</a></li>
+<li><a data-lang="ne" href="/ne/" hreflang="ne" lang="ne">नेपाली</a></li>
+<li><a data-lang="hi" href="/hi/" hreflang="hi" lang="hi">हिन्दी</a></li>
+<li><a data-lang="zh" href="/zh/" hreflang="zh" lang="zh">中文</a></li>
+<li><a data-lang="de" href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+<li><a data-lang="es" href="/es/" hreflang="es" lang="es">Español</a></li>
+<li><a data-lang="fr" href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+<li><a data-lang="pt" href="/pt/" hreflang="pt" lang="pt">Português</a></li>
+</ul>
+</div>
+<button aria-controls="nav" aria-expanded="false" aria-label="Abrir menú" class="menu-btn"><i class="fa fa-bars"></i></button>
+<nav class="nav" id="nav"><a href="#build">Qué construimos</a>
+<a href="#how">Reactor de algas</a>
+<a href="#domes">Domos</a>
+<a href="#story">Historia</a>
+<a href="#team">Equipo</a>
+<a href="#contact">Contacto</a></nav>
+</div>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="wrap">
+<span class="eyebrow">Chyau Bio Technologies · Valle de Katmandú, Nepal</span>
+<h1>Tecnología climática hecha en Nepal.</h1>
+<p>Construimos reactores de algas que convierten el CO<sub>2</sub> en oxígeno, barreras que impiden que el plástico llegue al río Bagmati y herramientas inteligentes para agricultores.</p>
+<div class="hero-ctas"><a class="btn btn-primary" href="#build">Ver qué construimos <i class="fa fa-arrow-down"></i></a>
+<a class="btn btn-ghost" href="#contact">Hablemos</a></div>
+</div>
+</section>
+<div class="stats">
+<div class="wrap stats-grid">
+<div class="stat"><strong data-notranslate="">1,000 L</strong><span>reactor de algas en funcionamiento en Pulchowk desde el 5 de junio de 2022</span></div>
+<div class="stat"><strong data-notranslate="">12,000+ L</strong><span>de oxígeno producidos por nuestros dos primeros reactores (ICIMOD)</span></div>
+<div class="stat"><strong data-notranslate="">84</strong><span>municipios trabajan con nosotros en el registro de línea base de carbono</span></div>
+<div class="stat"><strong data-notranslate="">2024</strong><span>Premio Green Startup Achievement, WMCC</span></div>
+</div>
+</div>
+<section id="build">
+<div class="wrap">
+<span class="eyebrow">Qué construimos</span>
+<h2>Máquinas y materiales que ponen a trabajar los residuos</h2>
+<p class="lead">Los gases de combustión, el agua sucia, el plástico de los ríos y los residuos agrícolas son nuestra materia prima. Todo lo que ves aquí se diseña, construye e instala en Nepal.</p>
+<div class="cards">
+<article class="card">
+<img alt="Reactor de algas Vayu Putra instalado en Pulchowk, Lalitpur" height="420" loading="lazy" src="/img/web/reactor-pulchowk.jpg" width="600"/>
+<div class="card-body">
+<span class="tag">Producto estrella</span>
+<h3>Reactor de algas Vayu Putra</h3>
+<p>Un dispositivo contra la contaminación del aire: alimenta a las algas con dióxido de carbono, luz solar y aguas residuales, y ellas devuelven oxígeno y biomasa. Diseñado para hospitales, incineradoras, fábricas y municipios que emiten gases de combustión.</p>
+</div>
+</article>
+<article class="card">
+<img alt="Firma del MoU de la barrera del Bagmati con la High Powered Commission" height="420" loading="lazy" src="/img/web/trash-barrier-mou.jpg" width="600"/>
+<div class="card-body">
+<span class="tag">Ríos</span>
+<h3>Barrera de basura del río Bagmati</h3>
+<p>Barreras flotantes que detienen el plástico y otros residuos antes de que bajen por el Bagmati. Construidas bajo un memorando de entendimiento (MoU) con la High Powered Commission y finalistas en el Falling Walls Lab Katmandú 2024.</p>
+</div>
+</article>
+<article class="card">
+<img alt="Socios de Chyau.Bio" height="420" loading="lazy" src="/img/web/partners.jpg" style="object-fit:contain;background:#fff" width="600"/>
+<div class="card-body">
+<span class="tag">Gobiernos locales</span>
+<h3>Registro de línea base de carbono</h3>
+<p>84 municipios de todo Nepal han escrito a Chyau Bio Technologies para participar. Las organizaciones de esos municipios registran su actividad climática y empresarial para establecer una línea base de carbono documentada, gestionada en la plataforma <a href="https://carbonupdates.com/" rel="noopener" target="_blank">Carbon Updates</a>.</p>
+</div>
+</article>
+<article class="card">
+<img alt="App Smart Switch con datos de luz solar, temperatura, humedad del suelo y del aire" height="420" loading="lazy" src="/img/web/smart-switch.jpg" width="600"/>
+<div class="card-body">
+<span class="tag">Agricultura</span>
+<h3>Herramientas de agricultura inteligente</h3>
+<p>El kit de sensores <strong>Smart Switch</strong> envía al teléfono del agricultor datos de luz solar, temperatura, humedad del suelo y humedad ambiental. Nuestro <strong>EPP para agricultura inteligente</strong> protege a quienes fumigan cultivos, y ofrecemos formación en invernaderos para productores.</p>
+</div>
+</article>
+<article class="card">
+<img alt="Invernadero de domo geodésico en un campo" height="420" loading="lazy" src="/img/web/dome-field.jpg" width="600"/>
+<div class="card-body">
+<span class="tag">Estructuras</span>
+<h3>Domos geodésicos</h3>
+<p>Estructuras de domo ligeras y resistentes para invernaderos y espacios de cultivo, montadas con nuestro propio manual numerado en inglés y nepalí. <a href="#domes">Cómo funciona el domo →</a></p>
+</div>
+</article>
+<article class="card">
+<img alt="Micelio creciendo entre residuos agrícolas" height="420" loading="lazy" src="/img/web/mycelium.jpg" width="600"/>
+<div class="card-body">
+<span class="tag">Donde empezamos</span>
+<h3>Biomateriales de micelio</h3>
+<p>Nuestro primer proyecto de investigación: micelio cultivado sobre residuos agrícolas para fabricar paneles aislantes biodegradables. De ahí viene nuestro nombre: chyau significa hongo en nepalí.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="how" id="how">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Cómo funciona el reactor de algas</span>
+<h2>Entra aire contaminado, sale oxígeno</h2>
+<p class="lead">Las algas hacen la fotosíntesis mucho más rápido que los árboles. El reactor Vayu Putra les da dióxido de carbono de una chimenea, nutrientes de las aguas residuales y la luz del entorno, y recoge lo que devuelven.</p>
+</div>
+<div aria-label="6 CO2 más 6 H2O, con luz y algas, dan C6H12O6 más 6 O2: el dióxido de carbono y el agua se convierten en biomasa y oxígeno" class="equation" role="img">
+<div class="eq-side">
+<div class="eq-term"><span class="eq-icon"><i class="fa fa-cloud"></i></span><span class="eq-formula" data-notranslate="">6CO<sub>2</sub></span><span class="eq-label">Dióxido de carbono<small>de los gases de combustión</small></span></div>
+<span class="eq-op">+</span>
+<div class="eq-term"><span class="eq-icon"><i class="fa fa-tint"></i></span><span class="eq-formula" data-notranslate="">6H<sub>2</sub>O</span><span class="eq-label">Agua<small>de aguas residuales</small></span></div>
+</div>
+<div class="eq-arrow">
+<span class="eq-cat"><i class="fa fa-sun-o"></i> Luz</span>
+<span class="eq-line"></span>
+<span class="eq-cat"><i class="fa fa-leaf"></i> Algas</span>
+</div>
+<div class="eq-side">
+<div class="eq-term out"><span class="eq-icon"><i class="fa fa-pagelines"></i></span><span class="eq-formula" data-notranslate="">C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></span><span class="eq-label">Biomasa de algas<small>para fertilizantes y energía</small></span></div>
+<span class="eq-op">+</span>
+<div class="eq-term out"><span class="eq-icon"><i class="fa fa-asterisk"></i></span><span class="eq-formula" data-notranslate="">6O<sub>2</sub></span><span class="eq-label">Oxígeno<small>de vuelta al aire</small></span></div>
+</div>
+</div>
+<div class="how-grid">
+<div aria-label="Qué entra y qué sale: entran dióxido de carbono, aguas residuales y luz solar; salen oxígeno y biomasa de algas" class="process">
+<div class="p-col">
+<span class="p-label">Entran residuos</span>
+<div class="p-item"><i aria-hidden="true" class="fa fa-industry"></i><div><strong>Gases de combustión y CO<sub>2</sub></strong><span>de chimeneas, calderas e incineradoras</span></div></div>
+<div class="p-item"><i aria-hidden="true" class="fa fa-tint"></i><div><strong>Aguas residuales</strong><span>nutrientes para las algas</span></div></div>
+<div class="p-item"><i aria-hidden="true" class="fa fa-sun-o"></i><div><strong>Luz solar</strong><span>impulsa la fotosíntesis</span></div></div>
+</div>
+<div class="p-core">
+<span aria-hidden="true" class="p-arrow"></span>
+<div class="p-reactor"><img alt="Reactor de algas Vayu Putra en Pulchowk" loading="lazy" src="/img/web/reactor-pulchowk.jpg"/><span>Reactor de algas<br/>Vayu Putra</span></div>
+<span aria-hidden="true" class="p-arrow"></span>
+</div>
+<div class="p-col">
+<span class="p-label">Sale algo útil</span>
+<div class="p-item out"><i aria-hidden="true" class="fa fa-asterisk"></i><div><strong>Oxígeno</strong><span>devuelto al aire</span></div></div>
+<div class="p-item out"><i aria-hidden="true" class="fa fa-pagelines"></i><div><strong>Biomasa de algas</strong><span>materia prima para fertilizantes y energía</span></div></div>
+<div class="p-item out"><i aria-hidden="true" class="fa fa-tint"></i><div><strong>Agua más limpia</strong><span>nutrientes absorbidos por las algas</span></div></div>
+</div>
+</div>
+<figure class="media">
+<div class="video">
+<iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy" src="https://www.youtube-nocookie.com/embed/Tx8yyDwAo9Y" title="Reactor de algas Vayu Putra: vídeo de presentación"></iframe>
+</div>
+<figcaption>Según ICIMOD, nuestros dos primeros reactores, en Pulchowk y Jawalakhel, produjeron más de 12.000 litros de oxígeno ocupando menos de 35 pies cuadrados. Las pruebas de escalado continúan en Impact Hub FabLab, con un reactor conectado a una planta de reciclaje de plástico.</figcaption>
+</figure>
+</div>
+<h3 class="uses-title">Para quien quema, calienta o trata residuos</h3>
+<div class="uses">
+<div class="use"><i aria-hidden="true" class="fa fa-hospital-o"></i><h4>Hospitales</h4><p>Por ley, los incineradores de residuos médicos deben funcionar. Un reactor en el lugar convierte sus gases de combustión en oxígeno.</p></div>
+<div class="use"><i aria-hidden="true" class="fa fa-fire"></i><h4>Incineradoras</h4><p>Tratar el humo de la quema de residuos en lugar de liberarlo.</p></div>
+<div class="use"><i aria-hidden="true" class="fa fa-industry"></i><h4>Fábricas y hornos</h4><p>Las cementeras, los hornos de ladrillo y las calderas producen CO<sub>2</sub> en grandes cantidades: alimento para las algas.</p></div>
+<div class="use"><i aria-hidden="true" class="fa fa-university"></i><h4>Municipios</h4><p>Tratamiento de aguas residuales, espacios públicos más limpios y biomasa de algas para energía.</p></div>
+</div>
+</div>
+</section>
+<section id="domes">
+<div class="wrap dome-grid">
+<div>
+<span class="eyebrow">Domos geodésicos</span>
+<h2>Un invernadero que cualquiera puede montar</h2>
+<p class="lead">Un domo geodésico reparte su carga en una red de triángulos, así que una estructura ligera resiste el viento y la nieve y cubre el mayor espacio con el mínimo material.</p>
+<p>Nuestro Geodome rectangular viene en un kit de varillas codificadas por color y uniones numeradas. El manual de construcción, en inglés y nepalí, muestra cada viga y cada perno: únelos en orden numérico y la estructura se levanta sin herramientas especiales ni personal capacitado. Los agricultores lo usan como invernadero y puede albergar un reactor de algas.</p>
+<ul class="dome-facts">
+<li><strong>76</strong><span>tuercas y pernos numerados</span></li>
+<li><strong>218</strong><span>varillas en cinco longitudes por color</span></li>
+<li><strong>2</strong><span>idiomas en el manual</span></li>
+</ul>
+<button class="dome-manual g-item" data-caption="Manual de construcción del Geodome rectangular, en inglés y nepalí" data-full="/img/web/dome-manual.jpg"><img alt="Manual de construcción del Geodome rectangular con uniones numeradas y varillas por colores" loading="lazy" src="/img/web/dome-manual.jpg"/><span><i class="fa fa-search-plus"></i> Ver el manual de construcción</span></button>
+</div>
+<div>
+<div class="video">
+<iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy" src="https://www.youtube-nocookie.com/embed/6uoNVtkZg_w" title="Invernadero y reactor de algas de fácil instalación"></iframe>
+</div>
+<div class="dome-photos">
+<button class="g-item" data-caption="Invernadero Geodome en un campo" data-full="/img/web/dome-field.jpg"><img alt="Invernadero Geodome en un campo" loading="lazy" src="/img/web/dome-field.jpg"/></button>
+<button class="g-item" data-caption="Estructura del domo en el taller" data-full="/img/web/hero-dome.jpg"><img alt="Estructura del domo en el taller" loading="lazy" src="/img/web/hero-dome.jpg"/></button>
+</div>
+</div>
+</div>
+</section>
+<section id="story">
+<div class="wrap">
+<div class="story-intro">
+<div>
+<span class="eyebrow">Nuestra historia</span>
+<h2>De los hongos a las máquinas</h2>
+</div>
+<div>
+<p><em>Chyau</em> significa hongo en nepalí, y ahí empezamos: cultivando micelio sobre residuos agrícolas como alternativa barata y biodegradable al aislamiento de viviendas.</p>
+<p>Desde entonces nuestro trabajo principal es el <strong>reactor de algas Vayu Putra</strong>, junto con barreras de basura para el río Bagmati, domos y refugios geodésicos, y herramientas inteligentes para agricultores. Diseñamos, construimos e instalamos en Nepal para que quienes necesitan estas máquinas puedan pagarlas.</p>
+</div>
+</div>
+<ol class="timeline">
+<li class="t-item">
+<span class="t-icon"><i aria-hidden="true" class="fa fa-flask"></i></span>
+<div class="t-card"><time>2019</time><h3>Fundada en Katmandú</h3><p>Un equipo de ingenieros, científicos, activistas y economistas empieza a investigar aislantes de micelio cultivado sobre residuos agrícolas.</p></div>
+</li>
+<li class="t-item">
+<span class="t-icon"><i aria-hidden="true" class="fa fa-microphone"></i></span>
+<div class="t-card"><time>2020</time><h3>ClimateLaunchpad Nepal</h3><p>Presentamos nuestros paneles aislantes de micelio en ClimateLaunchpad Nepal 2020.</p></div>
+</li>
+<li class="t-item">
+<span class="t-icon"><i aria-hidden="true" class="fa fa-file-text-o"></i></span>
+<div class="t-card"><time>9 de octubre de 2020</time><h3>Constituida como empresa</h3><p>Registrada como Chyau Bio Technologies Pvt. Ltd. en Lalitpur.</p></div>
+</li>
+<li class="t-item">
+<span class="t-icon"><i aria-hidden="true" class="fa fa-leaf"></i></span>
+<div class="t-card"><time>5 de junio de 2022</time><h3>Primer reactor de 1.000 litros</h3><p>El reactor de algas Vayu Putra entra en funcionamiento en Pulchowk el Día Mundial del Medio Ambiente.</p></div>
+</li>
+<li class="t-item">
+<span class="t-icon"><i aria-hidden="true" class="fa fa-newspaper-o"></i></span>
+<div class="t-card"><time>2022</time><h3>En los medios</h3><p>Onlinekhabar English publica un reportaje sobre nuestro trabajo contra los problemas de aire y basura de Katmandú; ICIMOD destaca nuestros reactores de Pulchowk y Jawalakhel, que han producido más de 12.000 litros de oxígeno.</p></div>
+</li>
+<li class="t-item">
+<span class="t-icon"><i aria-hidden="true" class="fa fa-university"></i></span>
+<div class="t-card"><time>Agosto de 2023</time><h3>Presentación ante el ministro</h3><p>Presentamos la investigación del reactor de algas a Shakti Bahadur Basnet, ministro de Energía, Recursos Hídricos y Riego.</p></div>
+</li>
+<li class="t-item">
+<span class="t-icon"><i aria-hidden="true" class="fa fa-handshake-o"></i></span>
+<div class="t-card"><time>2024</time><h3>MoU de la barrera del Bagmati</h3><p>Firmamos un MoU con la High Powered Commission para construir barreras que atrapen la basura flotante del río Bagmati.</p></div>
+</li>
+<li class="t-item">
+<span class="t-icon"><i aria-hidden="true" class="fa fa-trophy"></i></span>
+<div class="t-card"><time>5 de junio de 2024</time><h3>Premio Green Startup Achievement</h3><p>Ganado en la Waste Management &amp; Climate Conference 2024.</p></div>
+</li>
+<li class="t-item">
+<span class="t-icon"><i aria-hidden="true" class="fa fa-lightbulb-o"></i></span>
+<div class="t-card"><time>20 de julio de 2024</time><h3>Finalistas del Falling Walls Lab</h3><p>Uno de los diez finalistas del primer Falling Walls Lab de Nepal (DAAD y Universidad de Katmandú), con la barrera de basura del Bagmati.</p></div>
+</li>
+<li class="t-item">
+<span class="t-icon"><i aria-hidden="true" class="fa fa-home"></i></span>
+<div class="t-card"><time>24 de junio de 2025</time><h3>Refugio geodésico para desastres</h3><p>Terminamos de montar un refugio geodésico para desastres, fabricado y construido por mujeres, y empezamos a ofrecer viviendas refugio en kit plano.</p></div>
+</li>
+<li class="t-item">
+<span class="t-icon"><i aria-hidden="true" class="fa fa-map-marker"></i></span>
+<div class="t-card"><time>2025</time><h3>84 municipios se suman</h3><p>84 municipios de todo Nepal escriben a Chyau Bio para sumarse al registro de línea base de carbono, gestionado en la plataforma Carbon Updates.</p></div>
+</li>
+</ol>
+</div>
+</section>
+<section class="partners" id="partners">
+<div class="wrap">
+<span class="eyebrow">Socios y prensa</span>
+<h2>Con quién trabajamos</h2>
+<ul class="partner-names">
+<li>ICIMOD</li><li>Laboratorios de Aceleración del PNUD</li><li>Universidad de Cambridge</li><li>Ciudad Metropolitana de Lalitpur</li><li>FabLab Nepal</li><li>Impact Hub</li><li>High Powered Commission (Bagmati)</li><li>84 municipios de todo Nepal</li><li>Carbon Updates</li>
+</ul>
+<h3 class="subhead">En los medios</h3>
+<ul class="press" data-notranslate="">
+<li><a href="https://www.icimod.org/adaptation-solutions/algae-bioreactors-a-solution-to-air-pollution-and-urban-waste/" rel="noopener" target="_blank"><small>ICIMOD</small>Algae bioreactors, a solution to air pollution and urban waste</a></li>
+<li><a href="https://english.onlinekhabar.com/chyau-bio-startup-kathmandu.html" rel="noopener" target="_blank"><small>Onlinekhabar English</small>This startup is using school lessons to solve waste and air problems in Kathmandu</a></li>
+<li><a href="https://www.daad.in/en/falling-walls-lab-nepal-2024/" rel="noopener" target="_blank"><small>DAAD</small>Falling Walls Lab Kathmandu 2024 finalists</a></li>
+<li><a href="https://brandguff.com/chyau-technologies-innovators-aspiring-to-rid-pollution-using-algae/" rel="noopener" target="_blank"><small>Brand Guff</small>Innovators aspiring to rid pollution using algae</a></li>
+<li><a href="https://www.youtube.com/watch?v=Tx8yyDwAo9Y" rel="noopener" target="_blank"><small>YouTube</small>Vayu Putra algae reactor: announcement video</a></li>
+<li><a href="https://www.youtube.com/watch?v=2pnoOsPqt5o" rel="noopener" target="_blank"><small>YouTube</small>Chyau.Bio at ClimateLaunchpad Nepal 2020</a></li>
+</ul>
+</div>
+</section>
+<section id="team">
+<div class="wrap">
+<span class="eyebrow">Equipo</span>
+<h2>Las personas que lo construyen</h2>
+<div class="people">
+<div class="person">
+<img alt="Gunjan Ghimire" height="200" loading="lazy" src="/img/web/team-gunjan.jpg" width="200"/>
+<h3 data-notranslate="">Gunjan Ghimire</h3>
+<p class="role">Fundador y director ejecutivo</p>
+<p>Ingeniero e investigador. Dirige la investigación, las alianzas y el crecimiento. Exmiembro de los Global Shapers del Foro Económico Mundial.</p>
+<a aria-label="Gunjan Ghimire en LinkedIn" class="li" href="https://www.linkedin.com/in/gunjan-ghimire-9a5642112/" rel="noopener" target="_blank"><i class="fa fa-linkedin"></i></a>
+</div>
+<div class="person">
+<img alt="Pallab Shrestha" height="200" loading="lazy" src="/img/web/team-pallab.jpg" width="200"/>
+<h3 data-notranslate="">Pallab Shrestha</h3>
+<p class="role">Fundador, ingeniero de investigación</p>
+<p>Ingeniero con años de experiencia en Japón. Dirige el diseño de producto y la investigación técnica.</p>
+<a aria-label="Pallab Shrestha en LinkedIn" class="li" href="https://www.linkedin.com/in/pallab-shrestha-538371112/" rel="noopener" target="_blank"><i class="fa fa-linkedin"></i></a>
+</div>
+<div class="person">
+<img alt="Aashish Ghimire" height="200" loading="lazy" src="/img/web/team-aashish.jpg" width="200"/>
+<h3 data-notranslate="">Aashish Ghimire</h3>
+<p class="role">Administración y finanzas</p>
+<p>Abogado de formación. Lleva la administración y las finanzas y representa a la empresa en asuntos oficiales.</p>
+<a aria-label="Aashish Ghimire en LinkedIn" class="li" href="https://www.linkedin.com/in/aashish-ghimire-77a653146/" rel="noopener" target="_blank"><i class="fa fa-linkedin"></i></a>
+</div>
+<div class="person">
+<img alt="Riwaj Subedi" height="200" loading="lazy" src="/img/web/team-riwaj.jpg" width="200"/>
+<h3 data-notranslate="">Riwaj Subedi</h3>
+<p class="role">Fabricación y operaciones</p>
+<p>Dirige el equipo que fabrica e instala nuestras máquinas.</p>
+<a aria-label="Riwaj Subedi en LinkedIn" class="li" href="https://www.linkedin.com/in/riwaj-subedi-bb0234159" rel="noopener" target="_blank"><i class="fa fa-linkedin"></i></a>
+</div>
+</div>
+<h3 class="subhead">Asesores</h3>
+<div class="people">
+<div class="person small">
+<img alt="Dr. Ramesh Pandey" height="200" loading="lazy" src="/img/web/team-ramesh.jpg" width="200"/>
+<h3 data-notranslate="">Dr. Ramesh Pandey</h3>
+<p class="role">Científico investigador en biotecnología</p>
+<p>Décadas de investigación en India, Nepal, Corea y Estados Unidos.</p>
+</div>
+<div class="person small">
+<img alt="Padmakshi Rana, PhD" height="200" loading="lazy" src="/img/web/team-padmakshi.jpg" width="200"/>
+<h3 data-notranslate="">Padmakshi Rana, PhD</h3>
+<p class="role">Gestión de la fabricación</p>
+<p>Orienta nuestra investigación en fabricación eficiente.</p>
+<a aria-label="Padmakshi Rana, PhD en LinkedIn" class="li" href="https://www.linkedin.com/in/padmakshi-rana-5b24b927/" rel="noopener" target="_blank"><i class="fa fa-linkedin"></i></a>
+</div>
+<div class="person small">
+<img alt="Sharda Khanal Ghimire" height="200" loading="lazy" src="/img/web/team-sharda.jpg" width="200"/>
+<h3 data-notranslate="">Sharda Khanal Ghimire</h3>
+<p class="role">Profesora de Desarrollo Rural</p>
+<p>Nos ayuda a crear cadenas de valor que funcionen para los productores rurales.</p>
+<a aria-label="Sharda Khanal Ghimire en LinkedIn" class="li" href="https://www.linkedin.com/in/sharda-khanal-ghimire-38100241/" rel="noopener" target="_blank"><i class="fa fa-linkedin"></i></a>
+</div>
+<div class="person small">
+<img alt="Suman Pokharel" height="200" loading="lazy" src="/img/web/team-suman.jpg" width="200"/>
+<h3 data-notranslate="">Suman Pokharel</h3>
+<p class="role">Doctorando en biotecnología</p>
+<p>Un guía científico constante desde nuestros inicios.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="how" id="gallery">
+<div class="wrap">
+<span class="eyebrow">Galería</span>
+<h2>Nuestro trabajo hasta ahora</h2>
+<div class="gallery">
+<button class="g-item" data-caption="Inauguración del reactor de algas con ICIMOD" data-full="/img/web/reactor-inauguration.jpg"><img alt="Inauguración del reactor de algas con ICIMOD" loading="lazy" src="/img/web/reactor-inauguration.jpg"/></button>
+<button class="g-item" data-caption="Premio Green Startup Achievement, Waste Management &amp; Climate Conference 2024" data-full="/img/web/award-wmcc-2024.jpg"><img alt="Premio Green Startup Achievement, Waste Management &amp; Climate Conference 2024" loading="lazy" src="/img/web/award-wmcc-2024.jpg"/></button>
+<button class="g-item" data-caption="Formación en invernaderos con agricultores" data-full="/img/web/greenhouse-training.jpg"><img alt="Formación en invernaderos con agricultores" loading="lazy" src="/img/web/greenhouse-training.jpg"/></button>
+<button class="g-item" data-caption="Riwaj Subedi en la Global Talk Series de Global Shapers Katmandú" data-full="/img/web/global-talk.jpg"><img alt="Riwaj Subedi en la Global Talk Series de Global Shapers Katmandú" loading="lazy" src="/img/web/global-talk.jpg"/></button>
+<button class="g-item" data-caption="Con el alcalde de Lalitpur" data-full="/img/web/lalitpur-mayor.jpg"><img alt="Con el alcalde de Lalitpur" loading="lazy" src="/img/web/lalitpur-mayor.jpg"/></button>
+<button class="g-item" data-caption="Manual de construcción del domo, en inglés y nepalí" data-full="/img/web/dome-manual.jpg"><img alt="Manual de construcción del domo, en inglés y nepalí" loading="lazy" src="/img/web/dome-manual.jpg"/></button>
+<button class="g-item" data-caption="Cómo funciona el reactor de algas y para quién es" data-full="/img/web/brochure.jpg"><img alt="Cómo funciona el reactor de algas y para quién es" loading="lazy" src="/img/web/brochure.jpg"/></button>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="wrap contact-grid">
+<div>
+<span class="eyebrow" style="color:#bfe3c4">Contacto</span>
+<h2>¿Tienes una chimenea, un río o una granja?</h2>
+<p>Hablemos de instalar un reactor de algas, probar una barrera de basura o de herramientas de agricultura inteligente.</p>
+<ul>
+<li><i aria-hidden="true" class="fa fa-map-marker"></i> Tinkune, Katmandú, Nepal</li>
+<li data-notranslate=""><i aria-hidden="true" class="fa fa-phone"></i> <a href="tel:+9779742894429">+977 974 289 4429</a></li>
+<li data-notranslate=""><i aria-hidden="true" class="fa fa-envelope"></i> <a href="mailto:info@chyaubio.com">info@chyaubio.com</a></li>
+</ul>
+<a class="btn btn-primary" href="mailto:info@chyaubio.com?subject=Chyau.Bio%20enquiry">Escríbenos <i class="fa fa-arrow-right"></i></a>
+</div>
+<div class="map">
+<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3533.1398560705843!2d85.348401!3d27.682071999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDQwJzU1LjUiTiA4NcKwMjAnNTQuMiJF!5e0!3m2!1sen!2snp!4v1707056406717!5m2!1sen!2snp" title="Mapa de ubicación de Chyau.Bio"></iframe>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap foot-row">
+<span>© <span id="year">2026</span> Chyau Bio Technologies Pvt. Ltd.</span>
+<div class="socials">
+<a aria-label="Chyau.Bio en Facebook" href="https://www.facebook.com/Chyaubio-103694081368823/" rel="noopener" target="_blank"><i class="fa fa-facebook-official"></i></a>
+<a aria-label="Chyau.Bio en YouTube" href="https://www.youtube.com/channel/UC6jaRWOt3NLV4oqacOBEFhw" rel="noopener" target="_blank"><i class="fa fa-youtube-play"></i></a>
+</div>
+</div>
+</footer>
+<div aria-label="Visor de fotos" aria-modal="true" class="lightbox" id="lightbox" role="dialog">
+<button aria-label="Cerrar" type="button">×</button>
+<img alt=""/>
+<p></p>
+</div>
+<script>
+(function () {
+  var head = document.querySelector('.site-head');
+  function onScroll() { head.classList.toggle('solid', window.scrollY > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  var nav = document.getElementById('nav'), btn = document.querySelector('.menu-btn');
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+    head.classList.add('solid');
+  });
+  nav.addEventListener('click', function (e) { if (e.target.tagName === 'A') { nav.classList.remove('open'); btn.setAttribute('aria-expanded', false); } });
+
+  var lang = document.querySelector('.lang'), langBtn = lang.querySelector('.lang-btn');
+  langBtn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var open = lang.classList.toggle('open');
+    langBtn.setAttribute('aria-expanded', open);
+  });
+  document.addEventListener('click', function () { lang.classList.remove('open'); langBtn.setAttribute('aria-expanded', false); });
+  var here = document.documentElement.lang || 'en';
+  lang.querySelectorAll('a').forEach(function (a) {
+    if (a.dataset.lang === here) a.setAttribute('aria-current', 'true');
+    a.addEventListener('click', function () { try { localStorage.setItem('chyau-lang', a.dataset.lang); } catch (e) {} });
+  });
+
+  var lb = document.getElementById('lightbox'), lbImg = lb.querySelector('img'), lbCap = lb.querySelector('p');
+  document.querySelectorAll('.g-item').forEach(function (el) {
+    el.addEventListener('click', function () {
+      lbImg.src = el.dataset.full; lbImg.alt = el.dataset.caption; lbCap.innerHTML = el.dataset.caption;
+      lb.classList.add('open'); lb.querySelector('button').focus();
+    });
+  });
+  function close() { lb.classList.remove('open'); }
+  lb.addEventListener('click', function (e) { if (e.target !== lbImg) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
