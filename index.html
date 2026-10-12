@@ -1,364 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Chyau.Bio – Climate &amp; Agri Biotechnology Company in Nepal</title>
-<meta name="description" content="Chyau.Bio is a Nepali climate and agri-tech company using biotechnology and farm waste to make biodegradable products for agriculture and climate action.">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chyau.Bio – Algae Reactors &amp; Climate Technology, Made in Nepal</title>
+<meta name="description" content="Chyau Bio Technologies builds climate technology in Nepal: algae reactors that turn CO2 into oxygen, a Bagmati River trash barrier, and smart farming tools.">
 <link rel="canonical" href="https://chyaubio.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chyau.Bio">
-<meta property="og:title" content="Chyau.Bio – Climate &amp; Agri Biotechnology Company in Nepal">
-<meta property="og:description" content="Chyau.Bio is a Nepali climate and agri-tech company using biotechnology and farm waste to make biodegradable products for agriculture and climate action.">
+<meta property="og:title" content="Chyau.Bio – Algae Reactors &amp; Climate Technology, Made in Nepal">
+<meta property="og:description" content="Chyau Bio Technologies builds climate technology in Nepal: algae reactors that turn CO2 into oxygen, a Bagmati River trash barrier, and smart farming tools.">
 <meta property="og:url" content="https://chyaubio.com/">
-<meta property="og:image" content="https://chyaubio.com/img/dome%20picture.jpg">
+<meta property="og:image" content="https://chyaubio.com/img/web/hero-dome.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://chyaubio.com/#organization", "name": "Chyau.Bio", "url": "https://chyaubio.com/", "logo": "https://chyaubio.com/img/Logos/logo_transparent.png", "description": "Chyau.Bio is a Nepali climate and agri-tech company using biotechnology and farm waste to make biodegradable products for agriculture and climate action.", "foundingDate": "2019", "founder": [{"@type": "Person", "name": "Gunjan Ghimire"}, {"@type": "Person", "name": "Pallab Shrestha"}], "address": {"@type": "PostalAddress", "addressLocality": "Tinkune", "addressRegion": "Bagmati Province", "addressCountry": "NP"}, "email": "bio.chyau@gmail.com", "telephone": "+977-9742894429", "sameAs": ["https://www.facebook.com/Chyaubio-103694081368823/", "https://www.youtube.com/channel/UC6jaRWOt3NLV4oqacOBEFhw"]}</script>
-<link rel="icon" href="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/favicon.png" >
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<meta name="theme-color" content="#16352a">
+<link rel="icon" href="img/favicon.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://chyaubio.com/#organization", "name": "Chyau.Bio", "url": "https://chyaubio.com/", "logo": "https://chyaubio.com/img/Logos/logo_transparent.png", "description": "Chyau Bio Technologies builds climate technology in Nepal: algae reactors that turn CO2 into oxygen, a Bagmati River trash barrier, and smart farming tools.", "foundingDate": "2019", "founder": [{"@type": "Person", "name": "Gunjan Ghimire", "jobTitle": "Founder and CEO"}, {"@type": "Person", "name": "Pallab Shrestha", "jobTitle": "Founder, Research Engineer"}], "address": {"@type": "PostalAddress", "addressLocality": "Tinkune", "addressRegion": "Bagmati Province", "addressCountry": "NP"}, "email": "bio.chyau@gmail.com", "telephone": "+977-9742894429", "sameAs": ["https://www.facebook.com/Chyaubio-103694081368823/", "https://www.youtube.com/channel/UC6jaRWOt3NLV4oqacOBEFhw"], "legalName": "Chyau Bio Technologies Pvt. Ltd.", "award": "Green Startup Achievement Award, Waste Management & Climate Conference 2024", "knowsAbout": ["Algae bioreactors", "Carbon dioxide to oxygen conversion", "Air pollution mitigation", "River waste collection", "Smart farming", "Mycelium biomaterials"], "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Vayu Putra Algae Reactor", "description": "Air pollution mitigation device made in Nepal that converts CO2 into oxygen and biomass using algae, sunlight and wastewater."}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Smart Switch", "description": "Farm sensor kit that reports sunlight, temperature, soil moisture and humidity to a phone."}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Smart Farming PPE", "description": "Protective clothing for farmers spraying crops."}}], "image": "https://chyaubio.com/img/web/hero-dome.jpg"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preload" as="image" href="img/web/hero-dome.jpg">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-body, html {
-  height: 100%;
-  line-height: 1.8;
+:root {
+  --forest:#16352a; --forest-2:#1f4a39; --algae:#3c8c55; --algae-soft:#e4f0e4;
+  --cream:#f7f4ec; --sand:#efe9da; --amber:#e3a72f; --ink:#1a2320; --muted:#5c6b64;
+  --line:#dcd6c6; --radius:16px; --max:1180px;
 }
+*,*::before,*::after { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:72px; }
+body { margin:0; font-family:Inter,system-ui,sans-serif; color:var(--ink); background:var(--cream); line-height:1.65; font-size:17px; }
+img { max-width:100%; display:block; }
+a { color:var(--algae); }
+h1,h2,h3 { font-family:Fraunces,Georgia,serif; line-height:1.15; margin:0 0 .5em; color:var(--forest); }
+h2 { font-size:clamp(1.9rem,4vw,2.7rem); }
+h3 { font-size:1.25rem; }
+.wrap { max-width:var(--max); margin:0 auto; padding:0 20px; }
+section { padding:88px 0; }
+.eyebrow { display:inline-block; font-size:.78rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--algae); margin-bottom:12px; }
+.lead { font-size:1.15rem; color:var(--muted); max-width:680px; }
+.btn { display:inline-flex; align-items:center; gap:8px; padding:13px 22px; border-radius:999px; font-weight:600; text-decoration:none; font-size:.98rem; transition:transform .15s, background .15s; }
+.btn:hover { transform:translateY(-1px); }
+.btn-primary { background:var(--amber); color:#1d1606; }
+.btn-primary:hover { background:#f0b843; }
+.btn-ghost { border:1.5px solid rgba(255,255,255,.6); color:#fff; }
+.btn-ghost:hover { background:rgba(255,255,255,.12); }
+.btn-dark { background:var(--forest); color:#fff; }
 
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/dome picture.jpg");
-  min-height: 100%;
-}
+/* header */
+.site-head { position:fixed; inset:0 0 auto; z-index:50; transition:background .25s, box-shadow .25s; }
+.site-head.solid { background:rgba(247,244,236,.96); backdrop-filter:blur(8px); box-shadow:0 1px 0 var(--line); }
+.head-row { display:flex; align-items:center; justify-content:space-between; height:68px; }
+.brand { display:flex; align-items:center; gap:10px; font-family:Fraunces,serif; font-weight:700; font-size:1.3rem; color:#fff; text-decoration:none; }
+.brand img { width:36px; height:36px; }
+.solid .brand { color:var(--forest); }
+.nav { display:flex; gap:26px; }
+.nav a { color:#fff; text-decoration:none; font-weight:500; font-size:.95rem; opacity:.92; }
+.solid .nav a { color:var(--ink); }
+.nav a:hover { opacity:1; text-decoration:underline; text-underline-offset:5px; }
+.menu-btn { display:none; background:none; border:0; color:#fff; font-size:1.5rem; cursor:pointer; padding:8px; }
+.solid .menu-btn { color:var(--forest); }
 
-.w3-bar .w3-button {
-  padding: 16px;
+/* hero */
+.hero { position:relative; min-height:92vh; display:flex; align-items:flex-end; color:#fff; padding:140px 0 72px;
+  background:linear-gradient(180deg,rgba(10,30,22,.55) 0%,rgba(10,30,22,.35) 40%,rgba(10,30,22,.85) 100%), url("img/web/hero-dome.jpg") center/cover; }
+.hero h1 { color:#fff; font-size:clamp(2.6rem,7vw,5rem); max-width:900px; letter-spacing:-.01em; }
+.hero p { font-size:clamp(1.05rem,2vw,1.3rem); max-width:640px; opacity:.95; margin:0 0 28px; }
+.hero .eyebrow { color:#bfe3c4; }
+.hero-ctas { display:flex; gap:12px; flex-wrap:wrap; }
+
+/* stats */
+.stats { background:var(--forest); color:#fff; padding:40px 0; }
+.stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:28px; }
+.stat strong { display:block; font-family:Fraunces,serif; font-size:clamp(1.8rem,3.5vw,2.5rem); color:var(--amber); line-height:1.1; }
+.stat span { font-size:.92rem; opacity:.85; }
+
+/* products */
+.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:44px; }
+.card { background:#fff; border-radius:var(--radius); overflow:hidden; border:1px solid var(--line); display:flex; flex-direction:column; transition:transform .2s, box-shadow .2s; }
+.card:hover { transform:translateY(-3px); box-shadow:0 14px 30px rgba(22,53,42,.10); }
+.card img { width:100%; height:230px; object-fit:cover; }
+.card-body { padding:22px 22px 26px; }
+.card p { margin:0; color:var(--muted); font-size:.98rem; }
+.tag { display:inline-block; background:var(--algae-soft); color:var(--forest-2); font-size:.75rem; font-weight:600; padding:3px 10px; border-radius:999px; margin-bottom:10px; }
+
+/* how it works */
+.how { background:var(--sand); }
+.how-grid { display:grid; grid-template-columns:1.05fr 1fr; gap:56px; align-items:center; }
+.flow { display:flex; align-items:center; flex-wrap:wrap; gap:10px; margin:26px 0; }
+.chip { background:#fff; border:1px solid var(--line); border-radius:12px; padding:10px 14px; font-weight:600; font-size:.95rem; }
+.chip.out { background:var(--forest); color:#fff; border-color:var(--forest); }
+.op { color:var(--muted); font-weight:700; }
+.uses { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:8px; }
+.use { background:#fff; border-radius:12px; padding:16px 18px; border:1px solid var(--line); }
+.use i { color:var(--algae); font-size:1.3rem; }
+.use h3 { font-size:1.02rem; margin:8px 0 4px; font-family:Inter,sans-serif; font-weight:600; }
+.use p { margin:0; font-size:.9rem; color:var(--muted); }
+.video { position:relative; aspect-ratio:16/9; border-radius:var(--radius); overflow:hidden; background:#000; box-shadow:0 18px 40px rgba(22,53,42,.18); }
+.video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+.note { font-size:.85rem; color:var(--muted); margin-top:12px; }
+
+/* story + timeline */
+.story-grid { display:grid; grid-template-columns:1fr 1fr; gap:56px; }
+.timeline { list-style:none; margin:0; padding:0; border-left:2px solid var(--line); }
+.timeline li { position:relative; padding:0 0 26px 26px; }
+.timeline li::before { content:""; position:absolute; left:-8px; top:6px; width:14px; height:14px; border-radius:50%; background:var(--algae); box-shadow:0 0 0 4px var(--cream); }
+.timeline time { display:block; font-weight:600; color:var(--forest); }
+.timeline p { margin:2px 0 0; color:var(--muted); }
+
+/* partners + press */
+.partners { background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.partner-names { display:flex; flex-wrap:wrap; gap:10px 12px; margin:24px 0 0; padding:0; list-style:none; }
+.partner-names li { border:1px solid var(--line); border-radius:999px; padding:8px 16px; font-weight:500; background:var(--cream); }
+.press { list-style:none; padding:0; margin:24px 0 0; display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.press a { display:block; padding:16px 18px; border:1px solid var(--line); border-radius:12px; text-decoration:none; color:var(--ink); background:var(--cream); height:100%; }
+.press a:hover { border-color:var(--algae); }
+.press small { display:block; color:var(--algae); font-weight:600; font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; }
+
+/* team */
+.people { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:40px; }
+.person { background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:22px; text-align:center; position:relative; }
+.person img { width:120px; height:120px; border-radius:50%; object-fit:cover; margin:0 auto 14px; }
+.person.small img { width:88px; height:88px; }
+.person h3 { font-size:1.1rem; margin-bottom:2px; }
+.person .role { color:var(--algae); font-weight:600; font-size:.88rem; margin:0 0 8px; }
+.person p { font-size:.92rem; color:var(--muted); margin:0; }
+.person .li { position:absolute; top:14px; right:16px; color:#0a66c2; font-size:1.2rem; }
+.subhead { margin-top:56px; }
+
+/* gallery */
+.gallery { columns:4 220px; column-gap:14px; margin-top:36px; }
+.g-item { display:block; width:100%; margin:0 0 14px; padding:0; border:0; background:none; cursor:zoom-in; break-inside:avoid; border-radius:12px; overflow:hidden; }
+.g-item img { width:100%; transition:transform .3s; }
+.g-item:hover img { transform:scale(1.03); }
+.lightbox { position:fixed; inset:0; background:rgba(8,18,14,.92); display:none; align-items:center; justify-content:center; flex-direction:column; z-index:100; padding:24px; }
+.lightbox.open { display:flex; }
+.lightbox img { max-height:80vh; max-width:92vw; border-radius:8px; }
+.lightbox p { color:#fff; margin-top:14px; text-align:center; }
+.lightbox button { position:absolute; top:16px; right:20px; background:none; border:0; color:#fff; font-size:2.2rem; cursor:pointer; }
+
+/* contact */
+.contact { background:var(--forest); color:#e9efe9; }
+.contact h2 { color:#fff; }
+.contact-grid { display:grid; grid-template-columns:1fr 1.1fr; gap:48px; align-items:start; }
+.contact ul { list-style:none; padding:0; margin:26px 0; }
+.contact li { display:flex; gap:14px; align-items:center; margin-bottom:14px; font-size:1.05rem; }
+.contact li i { width:22px; text-align:center; color:var(--amber); font-size:1.2rem; }
+.contact a { color:#fff; }
+.map { border-radius:var(--radius); overflow:hidden; aspect-ratio:4/3; }
+.map iframe { width:100%; height:100%; border:0; }
+footer { background:#0f261d; color:#a9b8b0; padding:28px 0; font-size:.9rem; }
+.foot-row { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+.socials { display:flex; gap:16px; }
+.socials a { color:#fff; font-size:1.3rem; }
+
+@media (max-width:960px) {
+  .cards { grid-template-columns:1fr 1fr; }
+  .people { grid-template-columns:1fr 1fr; }
+  .how-grid,.story-grid,.contact-grid { grid-template-columns:1fr; gap:36px; }
+  .stats-grid { grid-template-columns:1fr 1fr; }
 }
+@media (max-width:720px) {
+  section { padding:64px 0; }
+  .nav { display:none; position:absolute; top:68px; left:0; right:0; flex-direction:column; gap:0; background:var(--cream); box-shadow:0 8px 20px rgba(0,0,0,.08); }
+  .nav.open { display:flex; }
+  .nav a { color:var(--ink); padding:14px 20px; border-top:1px solid var(--line); }
+  .menu-btn { display:block; }
+  .cards,.press,.uses { grid-template-columns:1fr; }
+  .hero { min-height:88vh; }
+}
+@media (max-width:420px) { .people { grid-template-columns:1fr; } }
+@media (prefers-reduced-motion:reduce) { *{ transition:none!important; scroll-behavior:auto!important; } }
 </style>
+</head>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">Chyau.Bio</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
-
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Climate and Agri Technology Company</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">We make Products that make the planet better.<</span><br>
-    <span class="w3-large">We research and develop Climate Technology products with the power of Biotechnology.</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more...</a></p>
-  </div> 
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <a href="https://www.facebook.com/Chyaubio-103694081368823/" class="fa fa-facebook-official w3-hover-opacity" aria-label="Chyau.Bio on Facebook" target="_blank" rel="noopener"></a>
+<header class="site-head" id="top">
+  <div class="wrap head-row">
+    <a href="#home" class="brand"><img src="img/Logos/logo_transparent.png" alt="" width="36" height="36">Chyau.Bio</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><i class="fa fa-bars"></i></button>
+    <nav class="nav" id="nav">
+      <a href="#build">What we build</a>
+      <a href="#how">How it works</a>
+      <a href="#story">Story</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
 </header>
- 
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <!-- Youtube Video -->
-<div align="center">
-<div class="w3-container w3-light-grey" style="padding:64px 16px">
-  <h1 class="w3-center">Check out how we Make our Products!</h1>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/6uoNVtkZg_w?si=NjmMNR61oBMpeA0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <p style="text-align:center"><a href="https://www.youtube.com/channel/UC6jaRWOt3NLV4oqacOBEFhw" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more...</a></p>
-</div>
-</div> 
-  
-  <h3 class="w3-center">ABOUT THE COMPANY</h3>
-  <p class="w3-center w3-large">These are our Values</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Technology</p>
-      <p>We use data to drive our Research and innovation for our products.
-      </p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Love for the Environment</p>
-      <p>All our products are eco-friendly and designed with the lens of Sustainability. This adds less strain to the ecosystem and 
-          more impact to our customer's conscience. 
-      </p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Unit Economics</p>
-      <p>We understand Quality and Quantity drive supply and demand. So we ship our products at a lower unit price than our
-        customers because of this fact. Vertical integration is key for us.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Circular Economy</p>
-      <p>Our products are made utilize facets of circular economy. We believe at the end of a life cycle for
-        one product means, start of the life cycle of another product. Keeping the loop intact for no waste to accumulate.
-      </p>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap">
+    <span class="eyebrow">Chyau Bio Technologies · Kathmandu Valley, Nepal</span>
+    <h1>Climate technology, made in Nepal.</h1>
+    <p>We build algae reactors that turn CO<sub>2</sub> into oxygen, trash barriers that keep plastic out of the Bagmati River, and smart tools for farmers.</p>
+    <div class="hero-ctas">
+      <a href="#build" class="btn btn-primary">See what we build <i class="fa fa-arrow-down"></i></a>
+      <a href="#contact" class="btn btn-ghost">Talk to us</a>
     </div>
   </div>
-<div align="center">
-<img class="w3-image w3-round-large" src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/partners.jpg" alt="Chyau.Bio partners" width="700" height="394">
-</div>
-</div>
+</section>
 
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Our Story</h3>
-      <p> The company was started in 2019 with the aim of making sustainable technologies. In 2021, we were able to sucessfully incorporate our Organization. We have a close relationship with our customers and our target users. Our Customers want a closer bond to nature in their products. Thus, Chyau.Bio leans on nature for its inspiration. We use raw materials from nature, we employ biomaterials and bioorganisms as our primary workers and we manufacture sustainable, renewable and biodegradable solutions for agriculture and climate action.
-Our business model is based on leveraging the waste and the disgarded materials in the nature to provide our products to our customers at Unit Price. Since 2019, our team has been researching on cutting down costs in terms of production and maintaining consistency of our manufacturing process.</p>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Product Portfolio</a></p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/7.jpg" alt="Chyau.Bio dome structure inauguration" width="700" height="394">
-    </div>
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><strong>1,000 L</strong><span>algae reactor running at Pulchowk since 5 June 2022</span></div>
+    <div class="stat"><strong>12,000+ L</strong><span>of oxygen produced by our first two reactors (ICIMOD)</span></div>
+    <div class="stat"><strong>&lt; 35 sq ft</strong><span>footprint of the machine that did it</span></div>
+    <div class="stat"><strong>2024</strong><span>Green Startup Achievement Award, WMCC</span></div>
   </div>
 </div>
 
-<!-- Team Section -->
-<div class="w3-container" style="padding:64px 16px" id="team">
-  <h3 class="w3-center">THE TEAM</h3>
-  <p class="w3-center w3-large">The ones who run this company</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/gunjan.png" alt="Gunjan Ghimire, Founder and CEO of Chyau.Bio" style="width:100%">
-        <div class="w3-container">
+<section id="build">
+  <div class="wrap">
+    <span class="eyebrow">What we build</span>
+    <h2>Machines and materials that put waste to work</h2>
+    <p class="lead">Flue gas, dirty water, river plastic and farm waste are raw materials to us. Everything here is designed, built and installed in Nepal.</p>
+    <div class="cards">
+        <article class="card">
+          <img src="img/web/reactor-pulchowk.jpg" alt="Vayu Putra algae reactor installed at Pulchowk, Lalitpur" loading="lazy" width="600" height="420">
+          <div class="card-body">
+            <span class="tag">Flagship</span>
+            <h3>Vayu Putra Algae Reactor</h3>
+            <p>An air-pollution device that feeds carbon dioxide, sunlight and wastewater to algae, which give back oxygen and biomass. Built for hospitals, waste incinerators, factories and municipalities that release flue gas.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/web/trash-barrier-mou.jpg" alt="Signing the Bagmati trash barrier MoU with the High Powered Commission" loading="lazy" width="600" height="420">
+          <div class="card-body">
+            <span class="tag">Rivers</span>
+            <h3>Bagmati River Trash Barrier</h3>
+            <p>Floating barriers that stop plastic and other waste before it travels down the Bagmati. Built under an MoU with the High Powered Commission, and a finalist at Falling Walls Lab Kathmandu 2024.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/web/smart-switch.jpg" alt="Smart Switch app showing sunlight, temperature, moisture and humidity readings" loading="lazy" width="600" height="420">
+          <div class="card-body">
+            <span class="tag">Farming</span>
+            <h3>Smart Switch</h3>
+            <p>A farm sensor kit that sends sunlight, temperature, soil moisture and humidity readings to the farmer's phone, so watering and shading decisions are based on data.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/web/farming-ppe.jpg" alt="Farmer spraying crops in Smart Farming PPE" loading="lazy" width="600" height="420">
+          <div class="card-body">
+            <span class="tag">Farming</span>
+            <h3>Smart Farming PPE</h3>
+            <p>Protective clothing for farmers who spray crops, part of our work on safer and more sustainable agriculture.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/web/dome-field.jpg" alt="Geodesic dome greenhouse in a field" loading="lazy" width="600" height="420">
+          <div class="card-body">
+            <span class="tag">Structures</span>
+            <h3>Geodesic Domes</h3>
+            <p>Light, strong dome frames for greenhouses and growing spaces, assembled from our own numbered construction manual in English and Nepali.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/web/mycelium.jpg" alt="Mycelium growing through agricultural waste" loading="lazy" width="600" height="420">
+          <div class="card-body">
+            <span class="tag">Where we started</span>
+            <h3>Mycelium Biomaterials</h3>
+            <p>Our first research project: mycelium grown on farm waste to make biodegradable insulation panels. It is also where our name comes from: chyau means mushroom in Nepali.</p>
+          </div>
+        </article>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="wrap how-grid">
+    <div>
+      <span class="eyebrow">How the algae reactor works</span>
+      <h2>Polluted air in, oxygen out</h2>
+      <p class="lead">Algae photosynthesise far faster than trees. The reactor gives them the carbon dioxide from a chimney, nutrients from wastewater and the sunlight around them.</p>
+      <div class="flow" aria-label="Sunlight plus algae plus wastewater plus carbon dioxide gives oxygen plus biomass">
+        <span class="chip">☀ Sunlight</span><span class="op">+</span><span class="chip">Algae</span><span class="op">+</span><span class="chip">Wastewater</span><span class="op">+</span><span class="chip">CO<sub>2</sub></span><span class="op">→</span><span class="chip out">Oxygen</span><span class="op">+</span><span class="chip out">Biomass</span>
+      </div>
+      <div class="uses">
+        <div class="use"><i class="fa fa-hospital-o" aria-hidden="true"></i><h3>Hospitals</h3><p>Medical waste incinerators must run by law. A reactor on site turns their flue gas into oxygen.</p></div>
+        <div class="use"><i class="fa fa-fire" aria-hidden="true"></i><h3>Waste incinerators</h3><p>Treat the smoke from waste burning instead of releasing it.</p></div>
+        <div class="use"><i class="fa fa-industry" aria-hidden="true"></i><h3>Factories and kilns</h3><p>Cement plants, kilns and boilers produce CO2 in bulk: feedstock for algae.</p></div>
+        <div class="use"><i class="fa fa-university" aria-hidden="true"></i><h3>Municipalities</h3><p>Wastewater treatment, cleaner public spaces and algal biomass for energy.</p></div>
+      </div>
+    </div>
+    <div>
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/6uoNVtkZg_w" title="How Chyau.Bio builds its products" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class="note">ICIMOD reports our first two reactors, at Pulchowk and Jawalakhel, produced more than 12,000 litres of oxygen. Scale-up tests continue at Impact Hub FabLab, with a reactor connected to a plastic recycling facility. <a href="https://www.youtube.com/channel/UC6jaRWOt3NLV4oqacOBEFhw" target="_blank" rel="noopener">More videos →</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="story">
+  <div class="wrap story-grid">
+    <div>
+      <span class="eyebrow">Our story</span>
+      <h2>From mushrooms to machines</h2>
+      <p><em>Chyau</em> means mushroom in Nepali, and that is where we started. In 2019 a team of engineers, research scientists, activists and economists began working on sustainable technology in Kathmandu. Our first project grew mycelium on agricultural waste as a low-cost, biodegradable alternative to home insulation.</p>
+      <p>Since then our main work has been the <strong>Vayu Putra algae reactor</strong>. We installed a 1,000-litre reactor at Pulchowk on World Environment Day 2022, and we now also build trash barriers for the Bagmati River and smart tools for farmers.</p>
+      <p>We work on unit economics as hard as on the science: we design, build and install in Nepal so that the people who need these machines can afford them.</p>
+    </div>
+    <div>
+      <ol class="timeline">
+        <li><time>2019</time><p>Founded in Kathmandu. Research begins on mycelium insulation made from farm waste.</p></li>
+        <li><time>2020</time><p>Pitched mycelium insulation panels at ClimateLaunchpad Nepal 2020. Registered as Chyau Bio Technologies Pvt. Ltd. in Lalitpur.</p></li>
+        <li><time>5 June 2022</time><p>1,000-litre Vayu Putra algae reactor installed at Pulchowk on World Environment Day.</p></li>
+        <li><time>August 2023</time><p>Presented the algae reactor research to Shakti Bahadur Basnet, Minister of Energy, Water Resources and Irrigation.</p></li>
+        <li><time>5 June 2024</time><p>Won the Green Startup Achievement Award at the Waste Management &amp; Climate Conference 2024.</p></li>
+        <li><time>20 July 2024</time><p>Finalist at Falling Walls Lab Kathmandu, organised by DAAD and Kathmandu University, with the Bagmati River trash barrier.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="partners" id="partners">
+  <div class="wrap">
+    <span class="eyebrow">Partners and coverage</span>
+    <h2>Who we work with</h2>
+    <ul class="partner-names">
+      <li>ICIMOD</li><li>UNDP Accelerator Labs</li><li>University of Cambridge</li><li>Lalitpur Metropolitan City</li><li>FabLab Nepal</li><li>Impact Hub</li><li>High Powered Commission (Bagmati)</li>
+    </ul>
+    <h3 class="subhead">In the news</h3>
+    <ul class="press">
+      <li><a href="https://www.icimod.org/adaptation-solutions/algae-bioreactors-a-solution-to-air-pollution-and-urban-waste/" target="_blank" rel="noopener"><small>ICIMOD</small>Algae bioreactors, a solution to air pollution and urban waste</a></li>
+      <li><a href="https://english.onlinekhabar.com/chyau-bio-startup-kathmandu.html" target="_blank" rel="noopener"><small>Onlinekhabar English</small>This startup is using school lessons to solve waste and air problems in Kathmandu</a></li>
+      <li><a href="https://www.daad.in/en/falling-walls-lab-nepal-2024/" target="_blank" rel="noopener"><small>DAAD</small>Falling Walls Lab Kathmandu 2024 finalists</a></li>
+      <li><a href="https://brandguff.com/chyau-technologies-innovators-aspiring-to-rid-pollution-using-algae/" target="_blank" rel="noopener"><small>Brand Guff</small>Innovators aspiring to rid pollution using algae</a></li>
+      <li><a href="https://www.youtube.com/watch?v=Tx8yyDwAo9Y" target="_blank" rel="noopener"><small>YouTube</small>Vayu Putra algae reactor: announcement video</a></li>
+      <li><a href="https://www.youtube.com/watch?v=2pnoOsPqt5o" target="_blank" rel="noopener"><small>YouTube</small>Chyau.Bio at ClimateLaunchpad Nepal 2020</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <span class="eyebrow">Team</span>
+    <h2>The people building it</h2>
+    <div class="people">
+        <div class="person">
+          <img src="img/web/team-gunjan.jpg" alt="Gunjan Ghimire" loading="lazy" width="200" height="200">
           <h3>Gunjan Ghimire</h3>
-          <p class="w3-opacity">Founder and CEO</p>
-          <p>Gunjan comes with research and engineering background. He leads marketing and organization growth. </p>
-          <p><button class="w3-button w3-light-grey w3-block"; onclick="window.location.href='https://www.linkedin.com/in/gunjan-ghimire-9a5642112/';"><i class="fa fa-envelope"></i> Contact</button></p>
+          <p class="role">Founder and CEO</p>
+          <p>Engineer and researcher. Leads research, partnerships and growth. World Economic Forum Global Shapers alumnus.</p>
+          <a class="li" href="https://www.linkedin.com/in/gunjan-ghimire-9a5642112/" target="_blank" rel="noopener" aria-label="Gunjan Ghimire on LinkedIn"><i class="fa fa-linkedin"></i></a>
         </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/aasish.jfif" alt="Aashish Ghimire, Administration and Finance" style="width:100%">
-        <div class="w3-container">
-          <h3>Aashish Ghimire</h3>
-          <p class="w3-opacity">Administration and Finance</p>
-          <p>Aashish Comes with the background of admin and Finance. He is a lawyer and also represents the organization in the highest of levels.</p>
-          <p><button class="w3-button w3-light-grey w3-block"; onclick="window.location.href='https://www.linkedin.com/in/aashish-ghimire-77a653146/';"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/pallab.jpg" alt="Pallab Shrestha, Founder and Research Engineer" style="width:100%">
-        <div class="w3-container">
+        <div class="person">
+          <img src="img/web/team-pallab.jpg" alt="Pallab Shrestha" loading="lazy" width="200" height="200">
           <h3>Pallab Shrestha</h3>
-          <p class="w3-opacity">Founder, Research Engineer</p>
-          <p>Pallab is a Mid-Career Professional from Japan. He has years of Engineering experience under his belt. He is the research engineer in many of the products design process.</p>
-          <p><button class="w3-button w3-light-grey w3-block"; onclick="window.location.href='https://www.linkedin.com/in/pallab-shrestha-538371112/';"><i class="fa fa-envelope"></i> Contact</button></p>
+          <p class="role">Founder, Research Engineer</p>
+          <p>Mid-career engineer with years of experience in Japan. Leads product design and engineering research.</p>
+          <a class="li" href="https://www.linkedin.com/in/pallab-shrestha-538371112/" target="_blank" rel="noopener" aria-label="Pallab Shrestha on LinkedIn"><i class="fa fa-linkedin"></i></a>
         </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/riwaj.jfif" alt="Riwaj Subedi, Manufacturing and Operations" style="width:100%">
-        <div class="w3-container">
+        <div class="person">
+          <img src="img/web/team-aashish.jpg" alt="Aashish Ghimire" loading="lazy" width="200" height="200">
+          <h3>Aashish Ghimire</h3>
+          <p class="role">Administration and Finance</p>
+          <p>Lawyer by background. Runs administration and finance and represents the company in official matters.</p>
+          <a class="li" href="https://www.linkedin.com/in/aashish-ghimire-77a653146/" target="_blank" rel="noopener" aria-label="Aashish Ghimire on LinkedIn"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="person">
+          <img src="img/web/team-riwaj.jpg" alt="Riwaj Subedi" loading="lazy" width="200" height="200">
           <h3>Riwaj Subedi</h3>
-          <p class="w3-opacity">Manufacturing and Operations</p>
-          <p>Riwaj Leads the team for Manufacturing and Operations.</p>
-          <p><button class="w3-button w3-light-grey w3-block"; onclick="window.location.href='https://www.linkedin.com/in/riwaj-subedi-bb0234159';"><i class="fa fa-envelope"></i> Contact</button></p>
+          <p class="role">Manufacturing and Operations</p>
+          <p>Leads the team that builds and installs our machines.</p>
+          <a class="li" href="https://www.linkedin.com/in/riwaj-subedi-bb0234159" target="_blank" rel="noopener" aria-label="Riwaj Subedi on LinkedIn"><i class="fa fa-linkedin"></i></a>
         </div>
-      </div>
     </div>
-  </div>
-</div>
-
-
-<!-- Advisers Section -->
-<div class="w3-container" style="padding:64px 16px" id="team">
-  <h3 class="w3-center">Our Advisors</h3>
-  <p class="w3-center w3-large">The Key People who have been Supportive to Us since our Start</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/suman.jpg" alt="Suman Pokharel, advisor" style="width:100%">
-        <div class="w3-container">
-          <h3>Suman Pokharel</h3>
-          <p class="w3-opacity">Bio-Tech PHD Candidate</p>
-          <p>Suman has advised us in many troublesome and fortunate situations. He is a reliable guide for us.</p>
-          <p><button class="w3-button w3-light-grey w3-block"; onclick="window.location.href='https://www.researchgate.net/profile/Suman_Pokhrel2';"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/ramesh.jpg" alt="Dr. Ramesh Pandey, advisor" style="width:100%">
-        <div class="w3-container">
+    <h3 class="subhead">Advisors</h3>
+    <div class="people">
+        <div class="person small">
+          <img src="img/web/team-ramesh.jpg" alt="Dr. Ramesh Pandey" loading="lazy" width="200" height="200">
           <h3>Dr. Ramesh Pandey</h3>
-          <p class="w3-opacity">Biotechnology Research Scientist</p>
-          <p>Dr.Pandey has decades of experience from his research in India, Nepal, Korea and US.</p>
-          <p><button class="w3-button w3-light-grey w3-block"; onclick="window.location.href='https://www.pubfacts.com/author/Ramesh+Prasad+Pandey';"><i class="fa fa-envelope"></i> Contact</button></p>
+          <p class="role">Biotechnology research scientist</p>
+          <p>Decades of research in India, Nepal, Korea and the US.</p>
+          
         </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/padmakshi.jpg" alt="Padmakshi Rana, PhD, advisor" style="width:100%">
-        <div class="w3-container">
+        <div class="person small">
+          <img src="img/web/team-padmakshi.jpg" alt="Padmakshi Rana, PhD" loading="lazy" width="200" height="200">
           <h3>Padmakshi Rana, PhD</h3>
-          <p class="w3-opacity">Manufacturing Management Expert</p>
-          <p>Dr. Rana has experience in manufacturing management and it has been vital in our lean manufacturing research.</p>
-          <p><button class="w3-button w3-light-grey w3-block"; onclick="window.location.href='https://www.linkedin.com/in/padmakshi-rana-5b24b927/';"><i class="fa fa-envelope"></i> Contact</button></p>
+          <p class="role">Manufacturing management</p>
+          <p>Guides our lean manufacturing research.</p>
+          <a class="li" href="https://www.linkedin.com/in/padmakshi-rana-5b24b927/" target="_blank" rel="noopener" aria-label="Padmakshi Rana, PhD on LinkedIn"><i class="fa fa-linkedin"></i></a>
         </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/sharda.jpg" alt="Sharda Khanal Ghimire, advisor" style="width:100%">
-        <div class="w3-container">
+        <div class="person small">
+          <img src="img/web/team-sharda.jpg" alt="Sharda Khanal Ghimire" loading="lazy" width="200" height="200">
           <h3>Sharda Khanal Ghimire</h3>
-          <p class="w3-opacity">Lecturer, Rural Development</p>
-          <p>Mrs. Ghimire has years of experience in Rural Development which has helped us improve our Value Chain. </p>
-          <p><button class="w3-button w3-light-grey w3-block"; onclick="window.location.href='https://www.linkedin.com/in/sharda-khanal-ghimire-38100241/';"><i class="fa fa-envelope"></i> Contact</button></p>
+          <p class="role">Lecturer, Rural Development</p>
+          <p>Helps us build value chains that work for rural growers.</p>
+          <a class="li" href="https://www.linkedin.com/in/sharda-khanal-ghimire-38100241/" target="_blank" rel="noopener" aria-label="Sharda Khanal Ghimire on LinkedIn"><i class="fa fa-linkedin"></i></a>
         </div>
-      </div>
+        <div class="person small">
+          <img src="img/web/team-suman.jpg" alt="Suman Pokharel" loading="lazy" width="200" height="200">
+          <h3>Suman Pokharel</h3>
+          <p class="role">Biotechnology PhD candidate</p>
+          <p>A steady scientific guide since our early days.</p>
+          
+        </div>
     </div>
   </div>
-</div>
+</section>
 
-
-<!-- Work Section -->
-<div class="w3-container" style="padding:64px 16px" id="work">
-  <h3 class="w3-center">OUR WORK</h3>
-  <p class="w3-center w3-large">This is our Progress So far!</p>
-
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/sharda at greenhouse.jpeg" style="width:100%; height:50%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Sharda Khanal at Greenhouse Training">
+<section class="how" id="gallery">
+  <div class="wrap">
+    <span class="eyebrow">Gallery</span>
+    <h2>Our work so far</h2>
+    <div class="gallery">
+        <button class="g-item" data-full="img/web/reactor-inauguration.jpg" data-caption="Inaugurating the algae reactor with ICIMOD"><img src="img/web/reactor-inauguration.jpg" alt="Inaugurating the algae reactor with ICIMOD" loading="lazy"></button>
+        <button class="g-item" data-full="img/web/award-wmcc-2024.jpg" data-caption="Green Startup Achievement Award, Waste Management &amp; Climate Conference 2024"><img src="img/web/award-wmcc-2024.jpg" alt="Green Startup Achievement Award, Waste Management &amp; Climate Conference 2024" loading="lazy"></button>
+        <button class="g-item" data-full="img/web/greenhouse-training.jpg" data-caption="Greenhouse training with farmers"><img src="img/web/greenhouse-training.jpg" alt="Greenhouse training with farmers" loading="lazy"></button>
+        <button class="g-item" data-full="img/web/global-talk.jpg" data-caption="Riwaj Subedi at the Global Talk Series, Global Shapers Kathmandu"><img src="img/web/global-talk.jpg" alt="Riwaj Subedi at the Global Talk Series, Global Shapers Kathmandu" loading="lazy"></button>
+        <button class="g-item" data-full="img/web/lalitpur-mayor.jpg" data-caption="With the Mayor of Lalitpur"><img src="img/web/lalitpur-mayor.jpg" alt="With the Mayor of Lalitpur" loading="lazy"></button>
+        <button class="g-item" data-full="img/web/dome-manual.jpg" data-caption="Dome construction manual, in English and Nepali"><img src="img/web/dome-manual.jpg" alt="Dome construction manual, in English and Nepali" loading="lazy"></button>
+        <button class="g-item" data-full="img/web/brochure.jpg" data-caption="How the algae reactor works, and who it is for"><img src="img/web/brochure.jpg" alt="How the algae reactor works, and who it is for" loading="lazy"></button>
     </div>
-    <div class="w3-col l3 m6">
-      <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/trash barrier mou.jpg" style="width:100%; height:50%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Trash Barrier MOU with High Powered Comission">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/award with 2024.jpeg" style="width:100%; height:50%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Award from 2024 on World Enviornment Day">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/globaltalkriwaj.jpg" style="width:100%; height:50%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Riwaj at Global Talk Series Organized by Global Shapers Kathmandu Hub">
-    </div>
-  </div>  
-  
- <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-      <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/1.jpg" style="width:100%; height:50%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Our Dome Structure">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/Rectangular Dome Design Manual Diagram(1).jpg" style="width:100%; height:50%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Our Design Manual">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/7.jpg" style="width:100%; height:50%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Inauguration Picture">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/5.jpg" style="width:100%; height:50%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Our Brochure">
-    </div>
-</div>
-
-<div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/2.jpg" style="width:100%; height:50%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Our Smart Switch">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/3.jpg" style="width:100%; height:50%;" onclick="onClick(this)" class="w3-hover-opacity" alt="With the Mayor of Lalitpur">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/6.jpg" style="width:100%; height:50%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Algae Reactor at Pulchowk">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/8.png" style="width:100%; height:50%;" onclick="onClick(this)" class="w3-hover-opacity" alt="Our PPE Flyer">
-    </div>
-</div>
-
-  
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
   </div>
-</div>
+</section>
 
-
-
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:32px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div align="center">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Tinkune, Province-3, Nepal</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +977 9742894429</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: bio.chyau@gmail.com</p>
-    <br>
-    <!-- Image of location/map -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3533.1398560705843!2d85.348401!3d27.682071999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDQwJzU1LjUiTiA4NcKwMjAnNTQuMiJF!5e0!3m2!1sen!2snp!4v1707056406717!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow" style="color:#bfe3c4">Contact</span>
+      <h2>Have a chimney, a river or a farm?</h2>
+      <p>Talk to us about installing an algae reactor, piloting a trash barrier, or smart farming tools.</p>
+      <ul>
+        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Tinkune, Kathmandu, Nepal</li>
+        <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+9779742894429">+977 974 289 4429</a></li>
+        <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:bio.chyau@gmail.com">bio.chyau@gmail.com</a></li>
+      </ul>
+      <a class="btn btn-primary" href="mailto:bio.chyau@gmail.com?subject=Chyau.Bio%20enquiry">Email us <i class="fa fa-arrow-right"></i></a>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3533.1398560705843!2d85.348401!3d27.682071999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDQwJzU1LjUiTiA4NcKwMjAnNTQuMiJF!5e0!3m2!1sen!2snp!4v1707056406717!5m2!1sen!2snp" title="Chyau.Bio location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </div>
-</div>
+</section>
+</main>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <img src="https://raw.githubusercontent.com/chyaubio/chyaubio.github.io/master/img/Logos/logo_transparent.png" alt="Chyau.Bio logo" width="160" height="160">
-  <br>
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/Chyaubio-103694081368823/" class="fa fa-facebook-official w3-hover-opacity" aria-label="Chyau.Bio on Facebook" target="_blank" rel="noopener"></a>
+<footer>
+  <div class="wrap foot-row">
+    <span>© <span id="year">2026</span> Chyau Bio Technologies Pvt. Ltd.</span>
+    <div class="socials">
+      <a href="https://www.facebook.com/Chyaubio-103694081368823/" target="_blank" rel="noopener" aria-label="Chyau.Bio on Facebook"><i class="fa fa-facebook-official"></i></a>
+      <a href="https://www.youtube.com/channel/UC6jaRWOt3NLV4oqacOBEFhw" target="_blank" rel="noopener" aria-label="Chyau.Bio on YouTube"><i class="fa fa-youtube-play"></i></a>
+    </div>
   </div>
 </footer>
- 
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button type="button" aria-label="Close">&times;</button>
+  <img alt="">
+  <p></p>
+</div>
+
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+(function () {
+  var head = document.querySelector('.site-head');
+  function onScroll() { head.classList.toggle('solid', window.scrollY > 40); }
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
+  var nav = document.getElementById('nav'), btn = document.querySelector('.menu-btn');
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+    head.classList.add('solid');
+  });
+  nav.addEventListener('click', function (e) { if (e.target.tagName === 'A') { nav.classList.remove('open'); btn.setAttribute('aria-expanded', false); } });
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
+  var lb = document.getElementById('lightbox'), lbImg = lb.querySelector('img'), lbCap = lb.querySelector('p');
+  document.querySelectorAll('.g-item').forEach(function (el) {
+    el.addEventListener('click', function () {
+      lbImg.src = el.dataset.full; lbImg.alt = el.dataset.caption; lbCap.innerHTML = el.dataset.caption;
+      lb.classList.add('open'); lb.querySelector('button').focus();
+    });
+  });
+  function close() { lb.classList.remove('open'); }
+  lb.addEventListener('click', function (e) { if (e.target !== lbImg) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
 </script>
-
 </body>
 </html>
