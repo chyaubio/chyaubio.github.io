@@ -86,27 +86,62 @@ section { padding:88px 0; }
 
 /* how it works */
 .how { background:var(--sand); }
-.how-grid { display:grid; grid-template-columns:1.05fr 1fr; gap:56px; align-items:center; }
-.flow { display:flex; align-items:center; flex-wrap:wrap; gap:10px; margin:26px 0; }
-.chip { background:#fff; border:1px solid var(--line); border-radius:12px; padding:10px 14px; font-weight:600; font-size:.95rem; }
-.chip.out { background:var(--forest); color:#fff; border-color:var(--forest); }
-.op { color:var(--muted); font-weight:700; }
-.uses { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:8px; }
-.use { background:#fff; border-radius:12px; padding:16px 18px; border:1px solid var(--line); }
-.use i { color:var(--algae); font-size:1.3rem; }
-.use h3 { font-size:1.02rem; margin:8px 0 4px; font-family:Inter,sans-serif; font-weight:600; }
-.use p { margin:0; font-size:.9rem; color:var(--muted); }
-.video { position:relative; aspect-ratio:16/9; border-radius:var(--radius); overflow:hidden; background:#000; box-shadow:0 18px 40px rgba(22,53,42,.18); }
+.section-head { max-width:760px; margin-bottom:40px; }
+.how-grid { display:grid; grid-template-columns:1.15fr 1fr; gap:40px; align-items:center; }
+.process { display:grid; grid-template-columns:1fr auto 1fr; gap:14px; align-items:center; background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:24px; }
+.p-col { display:flex; flex-direction:column; gap:10px; }
+.p-label { font-size:.72rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+.p-item { display:flex; gap:12px; align-items:flex-start; background:var(--cream); border-radius:12px; padding:12px 14px; }
+.p-item i { color:var(--algae); font-size:1.25rem; width:22px; text-align:center; margin-top:3px; }
+.p-item strong { display:block; font-size:.95rem; }
+.p-item span { font-size:.82rem; color:var(--muted); line-height:1.4; display:block; }
+.p-item.out { background:var(--forest); color:#fff; }
+.p-item.out i { color:var(--amber); }
+.p-item.out span { color:#c9d8cf; }
+.p-core { display:flex; flex-direction:column; align-items:center; gap:8px; }
+.p-arrow { color:var(--algae); font-size:1.4rem; }
+.p-arrow:last-child { display:none; }
+.p-reactor { text-align:center; }
+.p-reactor img { width:110px; height:140px; object-fit:cover; border-radius:12px; margin:0 auto 6px; }
+.p-reactor span { font-family:Fraunces,serif; font-weight:700; font-size:.95rem; color:var(--forest); line-height:1.2; display:block; }
+.media { margin:0; }
+.media figcaption { font-size:.88rem; color:var(--muted); margin-top:14px; line-height:1.55; }
+.video { position:relative; aspect-ratio:16/9; border-radius:var(--radius); overflow:hidden; background:var(--forest); box-shadow:0 18px 40px rgba(22,53,42,.18); }
 .video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
-.note { font-size:.85rem; color:var(--muted); margin-top:12px; }
+.uses-title { margin-top:56px; font-size:1.35rem; }
+.uses { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:16px; }
+.use { background:#fff; border-radius:14px; padding:20px; border:1px solid var(--line); }
+.use i { display:inline-grid; place-items:center; width:42px; height:42px; border-radius:50%; background:var(--algae-soft); color:var(--forest-2); font-size:1.15rem; }
+.use h4 { font-size:1.02rem; margin:12px 0 4px; }
+.use p { margin:0; font-size:.9rem; color:var(--muted); line-height:1.55; }
+
+/* domes */
+.dome-grid { display:grid; grid-template-columns:1fr 1.05fr; gap:56px; align-items:start; }
+.dome-facts { list-style:none; padding:0; margin:26px 0; display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.dome-facts li { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px; }
+.dome-facts strong { display:block; font-family:Fraunces,serif; font-size:1.9rem; color:var(--forest); line-height:1.1; }
+.dome-facts span { font-size:.82rem; color:var(--muted); line-height:1.35; display:block; }
+.dome-manual { position:relative; border:1px solid var(--line); background:#fff; }
+.dome-manual span { position:absolute; right:10px; bottom:10px; background:var(--forest); color:#fff; font-size:.8rem; font-weight:600; padding:6px 12px; border-radius:999px; }
+.dome-photos { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px; }
+.dome-photos .g-item { margin:0; }
+.dome-photos img { height:180px; object-fit:cover; }
 
 /* story + timeline */
-.story-grid { display:grid; grid-template-columns:1fr 1fr; gap:56px; }
-.timeline { list-style:none; margin:0; padding:0; border-left:2px solid var(--line); }
-.timeline li { position:relative; padding:0 0 26px 26px; }
-.timeline li::before { content:""; position:absolute; left:-8px; top:6px; width:14px; height:14px; border-radius:50%; background:var(--algae); box-shadow:0 0 0 4px var(--cream); }
-.timeline time { display:block; font-weight:600; color:var(--forest); }
-.timeline p { margin:2px 0 0; color:var(--muted); }
+.story-intro { display:grid; grid-template-columns:1fr 1.3fr; gap:48px; align-items:end; margin-bottom:56px; }
+.story-intro p { margin:0 0 12px; }
+.timeline { list-style:none; margin:0; padding:0; position:relative; }
+.timeline::before { content:""; position:absolute; left:50%; top:0; bottom:0; width:2px; background:linear-gradient(var(--algae),var(--line)); transform:translateX(-50%); }
+.t-item { position:relative; display:grid; grid-template-columns:1fr 64px 1fr; align-items:center; margin-bottom:22px; }
+.t-icon { grid-column:2; justify-self:center; width:48px; height:48px; border-radius:50%; background:var(--forest); color:var(--amber); display:grid; place-items:center; font-size:1.15rem; box-shadow:0 0 0 6px var(--cream); z-index:1; }
+.t-card { grid-row:1; background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px 20px; position:relative; transition:transform .2s, box-shadow .2s; }
+.t-card:hover { transform:translateY(-2px); box-shadow:0 10px 24px rgba(22,53,42,.08); }
+.t-item:nth-child(odd) .t-card { grid-column:1; text-align:right; }
+.t-item:nth-child(even) .t-card { grid-column:3; }
+.t-card time { display:block; font-size:.78rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--algae); }
+.t-card h3 { font-size:1.12rem; margin:4px 0 4px; }
+.t-card p { margin:0; color:var(--muted); font-size:.93rem; line-height:1.55; }
+.t-item:last-child .t-icon { background:var(--amber); color:var(--forest); }
 
 /* partners + press */
 .partners { background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
@@ -157,7 +192,12 @@ footer { background:#0f261d; color:#a9b8b0; padding:28px 0; font-size:.9rem; }
 @media (max-width:960px) {
   .cards { grid-template-columns:1fr 1fr; }
   .people { grid-template-columns:1fr 1fr; }
-  .how-grid,.story-grid,.contact-grid { grid-template-columns:1fr; gap:36px; }
+  .how-grid,.story-grid,.contact-grid,.dome-grid,.story-intro { grid-template-columns:1fr; gap:36px; }
+  .timeline::before { left:24px; }
+  .t-item { grid-template-columns:48px 1fr; gap:16px; }
+  .t-icon { grid-column:1; }
+  .t-item:nth-child(odd) .t-card, .t-item:nth-child(even) .t-card { grid-column:2; text-align:left; }
+  .uses { grid-template-columns:1fr 1fr; }
   .stats-grid { grid-template-columns:1fr 1fr; }
 }
 @media (max-width:720px) {
@@ -167,6 +207,11 @@ footer { background:#0f261d; color:#a9b8b0; padding:28px 0; font-size:.9rem; }
   .nav a { color:var(--ink); padding:14px 20px; border-top:1px solid var(--line); }
   .menu-btn { display:block; }
   .cards,.press,.uses { grid-template-columns:1fr; }
+  .process { grid-template-columns:1fr; }
+  .p-core { flex-direction:row; justify-content:center; }
+  .p-arrow { transform:rotate(90deg); }
+  .p-arrow:last-child { display:block; }
+  .p-core .p-arrow:first-child { display:none; }
   .hero { min-height:88vh; }
 }
 @media (max-width:420px) { .people { grid-template-columns:1fr; } }
@@ -181,7 +226,8 @@ footer { background:#0f261d; color:#a9b8b0; padding:28px 0; font-size:.9rem; }
     <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><i class="fa fa-bars"></i></button>
     <nav class="nav" id="nav">
       <a href="#build">What we build</a>
-      <a href="#how">How it works</a>
+      <a href="#how">Algae reactor</a>
+      <a href="#domes">Domes</a>
       <a href="#story">Story</a>
       <a href="#team">Team</a>
       <a href="#contact">Contact</a>
@@ -254,7 +300,7 @@ footer { background:#0f261d; color:#a9b8b0; padding:28px 0; font-size:.9rem; }
           <div class="card-body">
             <span class="tag">Structures</span>
             <h3>Geodesic Domes</h3>
-            <p>Light, strong dome frames for greenhouses and growing spaces, assembled from our own numbered construction manual in English and Nepali.</p>
+            <p>Light, strong dome frames for greenhouses and growing spaces, assembled from our own numbered construction manual in English and Nepali. <a href="#domes">How the dome works →</a></p>
           </div>
         </article>
         <article class="card">
@@ -270,50 +316,132 @@ footer { background:#0f261d; color:#a9b8b0; padding:28px 0; font-size:.9rem; }
 </section>
 
 <section class="how" id="how">
-  <div class="wrap how-grid">
-    <div>
+  <div class="wrap">
+    <div class="section-head">
       <span class="eyebrow">How the algae reactor works</span>
       <h2>Polluted air in, oxygen out</h2>
-      <p class="lead">Algae photosynthesise far faster than trees. The reactor gives them the carbon dioxide from a chimney, nutrients from wastewater and the sunlight around them.</p>
-      <div class="flow" aria-label="Sunlight plus algae plus wastewater plus carbon dioxide gives oxygen plus biomass">
-        <span class="chip">☀ Sunlight</span><span class="op">+</span><span class="chip">Algae</span><span class="op">+</span><span class="chip">Wastewater</span><span class="op">+</span><span class="chip">CO<sub>2</sub></span><span class="op">→</span><span class="chip out">Oxygen</span><span class="op">+</span><span class="chip out">Biomass</span>
+      <p class="lead">Algae photosynthesise far faster than trees. The Vayu Putra reactor feeds them carbon dioxide from a chimney, nutrients from wastewater and the light around them, and collects what they give back.</p>
+    </div>
+    <div class="how-grid">
+      <div class="process" aria-label="How the reactor works: carbon dioxide, wastewater and sunlight go in; oxygen and algal biomass come out">
+        <div class="p-col">
+          <span class="p-label">Goes in</span>
+          <div class="p-item"><i class="fa fa-cloud" aria-hidden="true"></i><div><strong>CO<sub>2</sub> and flue gas</strong><span>from chimneys, boilers and incinerators</span></div></div>
+          <div class="p-item"><i class="fa fa-tint" aria-hidden="true"></i><div><strong>Wastewater</strong><span>nutrients the algae feed on</span></div></div>
+          <div class="p-item"><i class="fa fa-sun-o" aria-hidden="true"></i><div><strong>Sunlight</strong><span>drives photosynthesis</span></div></div>
+        </div>
+        <div class="p-core">
+          <i class="fa fa-long-arrow-right p-arrow" aria-hidden="true"></i>
+          <div class="p-reactor"><img src="img/web/reactor-pulchowk.jpg" alt="Vayu Putra algae reactor at Pulchowk" loading="lazy"><span>Vayu Putra<br>algae reactor</span></div>
+          <i class="fa fa-long-arrow-right p-arrow" aria-hidden="true"></i>
+        </div>
+        <div class="p-col">
+          <span class="p-label">Comes out</span>
+          <div class="p-item out"><i class="fa fa-leaf" aria-hidden="true"></i><div><strong>Oxygen</strong><span>released back into the air</span></div></div>
+          <div class="p-item out"><i class="fa fa-recycle" aria-hidden="true"></i><div><strong>Algal biomass</strong><span>raw material for fertiliser and energy</span></div></div>
+        </div>
       </div>
-      <div class="uses">
-        <div class="use"><i class="fa fa-hospital-o" aria-hidden="true"></i><h3>Hospitals</h3><p>Medical waste incinerators must run by law. A reactor on site turns their flue gas into oxygen.</p></div>
-        <div class="use"><i class="fa fa-fire" aria-hidden="true"></i><h3>Waste incinerators</h3><p>Treat the smoke from waste burning instead of releasing it.</p></div>
-        <div class="use"><i class="fa fa-industry" aria-hidden="true"></i><h3>Factories and kilns</h3><p>Cement plants, kilns and boilers produce CO2 in bulk: feedstock for algae.</p></div>
-        <div class="use"><i class="fa fa-university" aria-hidden="true"></i><h3>Municipalities</h3><p>Wastewater treatment, cleaner public spaces and algal biomass for energy.</p></div>
-      </div>
+      <figure class="media">
+        <div class="video">
+          <iframe src="https://www.youtube-nocookie.com/embed/Tx8yyDwAo9Y" title="Vayu Putra algae reactor: announcement video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <figcaption>ICIMOD reports our first two reactors, at Pulchowk and Jawalakhel, produced more than 12,000 litres of oxygen from a footprint under 35 sq ft. Scale-up tests continue at Impact Hub FabLab, with a reactor connected to a plastic recycling facility.</figcaption>
+      </figure>
+    </div>
+    <h3 class="uses-title">Built for anyone who burns, boils or treats waste</h3>
+    <div class="uses">
+      <div class="use"><i class="fa fa-hospital-o" aria-hidden="true"></i><h4>Hospitals</h4><p>Medical waste incinerators must run by law. A reactor on site turns their flue gas into oxygen.</p></div>
+      <div class="use"><i class="fa fa-fire" aria-hidden="true"></i><h4>Waste incinerators</h4><p>Treat the smoke from burning waste instead of releasing it.</p></div>
+      <div class="use"><i class="fa fa-industry" aria-hidden="true"></i><h4>Factories and kilns</h4><p>Cement plants, kilns and boilers make CO<sub>2</sub> in bulk: feedstock for algae.</p></div>
+      <div class="use"><i class="fa fa-university" aria-hidden="true"></i><h4>Municipalities</h4><p>Wastewater treatment, cleaner public spaces and algal biomass for energy.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="domes">
+  <div class="wrap dome-grid">
+    <div>
+      <span class="eyebrow">Geodesic domes</span>
+      <h2>A greenhouse anyone can put up</h2>
+      <p class="lead">A geodesic dome spreads its load across a web of triangles, so a light frame stands strong against wind and snow and encloses the most space for the least material.</p>
+      <p>Our rectangular Geodome comes as a kit of colour-coded struts and numbered joints. The construction manual, in English and Nepali, shows every beam and bolt: connect them in numbered order and the frame goes up without special tools or a trained crew. Farmers use it as a greenhouse, and it can house an algae reactor.</p>
+      <ul class="dome-facts">
+        <li><strong>76</strong><span>numbered nuts and bolts</span></li>
+        <li><strong>218</strong><span>struts in five colour-coded lengths</span></li>
+        <li><strong>2</strong><span>languages in the manual</span></li>
+      </ul>
+      <button class="dome-manual g-item" data-full="img/web/dome-manual.jpg" data-caption="Rectangular Geodome construction manual, in English and Nepali"><img src="img/web/dome-manual.jpg" alt="Rectangular Geodome construction manual with numbered joints and colour-coded struts" loading="lazy"><span><i class="fa fa-search-plus"></i> View the construction manual</span></button>
     </div>
     <div>
       <div class="video">
-        <iframe src="https://www.youtube-nocookie.com/embed/6uoNVtkZg_w" title="How Chyau.Bio builds its products" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/6uoNVtkZg_w" title="Easy-install greenhouse and algae reactor" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <p class="note">ICIMOD reports our first two reactors, at Pulchowk and Jawalakhel, produced more than 12,000 litres of oxygen, from a machine with a footprint under 35 sq ft. Scale-up tests continue at Impact Hub FabLab, with a reactor connected to a plastic recycling facility. <a href="https://www.youtube.com/channel/UC6jaRWOt3NLV4oqacOBEFhw" target="_blank" rel="noopener">More videos →</a></p>
+      <div class="dome-photos">
+        <button class="g-item" data-full="img/web/dome-field.jpg" data-caption="Geodome greenhouse in a field"><img src="img/web/dome-field.jpg" alt="Geodome greenhouse in a field" loading="lazy"></button>
+        <button class="g-item" data-full="img/web/hero-dome.jpg" data-caption="Dome frame in the workshop"><img src="img/web/hero-dome.jpg" alt="Dome frame in the workshop" loading="lazy"></button>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="story">
-  <div class="wrap story-grid">
-    <div>
-      <span class="eyebrow">Our story</span>
-      <h2>From mushrooms to machines</h2>
-      <p><em>Chyau</em> means mushroom in Nepali, and that is where we started. In 2019 a team of engineers, research scientists, activists and economists began working on sustainable technology in Kathmandu. Our first project grew mycelium on agricultural waste as a low-cost, biodegradable alternative to home insulation.</p>
-      <p>Since then our main work has been the <strong>Vayu Putra algae reactor</strong>. We installed a 1,000-litre reactor at Pulchowk on World Environment Day 2022, and we now also build trash barriers for the Bagmati River and smart tools for farmers.</p>
-      <p>We work on unit economics as hard as on the science: we design, build and install in Nepal so that the people who need these machines can afford them.</p>
+  <div class="wrap">
+    <div class="story-intro">
+      <div>
+        <span class="eyebrow">Our story</span>
+        <h2>From mushrooms to machines</h2>
+      </div>
+      <div>
+        <p><em>Chyau</em> means mushroom in Nepali, and that is where we started: growing mycelium on agricultural waste as a low-cost, biodegradable alternative to home insulation.</p>
+        <p>Since then our main work has been the <strong>Vayu Putra algae reactor</strong>, alongside trash barriers for the Bagmati River, geodesic domes and shelters, and smart tools for farmers. We design, build and install in Nepal, so the people who need these machines can afford them.</p>
+      </div>
     </div>
-    <div>
-      <ol class="timeline">
-        <li><time>2019</time><p>Founded in Kathmandu. Research begins on mycelium insulation made from farm waste.</p></li>
-        <li><time>2020</time><p>Pitched mycelium insulation panels at ClimateLaunchpad Nepal 2020. Registered as Chyau Bio Technologies Pvt. Ltd. in Lalitpur.</p></li>
-        <li><time>5 June 2022</time><p>1,000-litre Vayu Putra algae reactor installed at Pulchowk on World Environment Day.</p></li>
-        <li><time>August 2023</time><p>Presented the algae reactor research to Shakti Bahadur Basnet, Minister of Energy, Water Resources and Irrigation.</p></li>
-        <li><time>5 June 2024</time><p>Won the Green Startup Achievement Award at the Waste Management &amp; Climate Conference 2024.</p></li>
-        <li><time>20 July 2024</time><p>Finalist at Falling Walls Lab Kathmandu, organised by DAAD and Kathmandu University, with the Bagmati River trash barrier.</p></li>
-        <li><time>Today</time><p>84 municipalities across Nepal working with us on carbon baseline registration, run on the Carbon Updates platform.</p></li>
-      </ol>
-    </div>
+    <ol class="timeline">
+      <li class="t-item">
+        <span class="t-icon"><i class="fa fa-flask" aria-hidden="true"></i></span>
+        <div class="t-card"><time>2019</time><h3>Founded in Kathmandu</h3><p>A team of engineers, scientists, activists and economists starts researching mycelium insulation grown on farm waste.</p></div>
+      </li>
+      <li class="t-item">
+        <span class="t-icon"><i class="fa fa-microphone" aria-hidden="true"></i></span>
+        <div class="t-card"><time>2020</time><h3>ClimateLaunchpad Nepal</h3><p>Pitched our mycelium insulation panels at ClimateLaunchpad Nepal 2020.</p></div>
+      </li>
+      <li class="t-item">
+        <span class="t-icon"><i class="fa fa-file-text-o" aria-hidden="true"></i></span>
+        <div class="t-card"><time>9 October 2020</time><h3>Registered as a company</h3><p>Incorporated as Chyau Bio Technologies Pvt. Ltd. in Lalitpur.</p></div>
+      </li>
+      <li class="t-item">
+        <span class="t-icon"><i class="fa fa-leaf" aria-hidden="true"></i></span>
+        <div class="t-card"><time>5 June 2022</time><h3>First 1,000-litre reactor</h3><p>The Vayu Putra algae reactor goes live at Pulchowk on World Environment Day.</p></div>
+      </li>
+      <li class="t-item">
+        <span class="t-icon"><i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
+        <div class="t-card"><time>2022</time><h3>In the news</h3><p>Onlinekhabar English profiles our work on Kathmandu's air and waste problems; ICIMOD features our Pulchowk and Jawalakhel reactors, which have produced more than 12,000 litres of oxygen.</p></div>
+      </li>
+      <li class="t-item">
+        <span class="t-icon"><i class="fa fa-university" aria-hidden="true"></i></span>
+        <div class="t-card"><time>August 2023</time><h3>Presented to the Minister</h3><p>Took the algae reactor research to Shakti Bahadur Basnet, Minister of Energy, Water Resources and Irrigation.</p></div>
+      </li>
+      <li class="t-item">
+        <span class="t-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i></span>
+        <div class="t-card"><time>2024</time><h3>Bagmati trash barrier MoU</h3><p>Signed an MoU with the High Powered Commission to build trash barriers that catch floating waste in the Bagmati River.</p></div>
+      </li>
+      <li class="t-item">
+        <span class="t-icon"><i class="fa fa-trophy" aria-hidden="true"></i></span>
+        <div class="t-card"><time>5 June 2024</time><h3>Green Startup Achievement Award</h3><p>Won at the Waste Management &amp; Climate Conference 2024.</p></div>
+      </li>
+      <li class="t-item">
+        <span class="t-icon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></span>
+        <div class="t-card"><time>20 July 2024</time><h3>Falling Walls Lab finalist</h3><p>One of ten finalists at the first Falling Walls Lab in Nepal (DAAD and Kathmandu University), with the Bagmati trash barrier.</p></div>
+      </li>
+      <li class="t-item">
+        <span class="t-icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+        <div class="t-card"><time>24 June 2025</time><h3>Geodesic disaster shelter</h3><p>Finished setting up a geodesic disaster shelter, made and built by women, and began offering flat-pack shelter homes.</p></div>
+      </li>
+      <li class="t-item">
+        <span class="t-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+        <div class="t-card"><time>2025</time><h3>84 municipalities on board</h3><p>84 municipalities across Nepal write to Chyau Bio to join carbon baseline registration, run on the Carbon Updates platform.</p></div>
+      </li>
+    </ol>
   </div>
 </section>
 
